@@ -9,12 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Install lftp
+        run: sudo apt-get install -y lftp
       - name: SFTP Deploy
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local_path: ./
-          remote_path: /
-          delete_remote_files: false
+        run: |
+          lftp -c "
+            set sftp:auto-confirm yes;
+            set net:max-retries 3;
+            open sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }};
+            mirror -R --parallel=4 \
+              --exclude .git/ \
+              --exclude .github/ \
+              --exclude wp-config.php \
+              ./ /;
+            bye
+          "
