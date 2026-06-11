@@ -17,7 +17,10 @@ jobs:
             set sftp:auto-confirm yes;
             set net:max-retries 3;
             open sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }};
-            mirror -R --delete --parallel=4 \
+            rm -rf /wp-content/themes/twentytwentytwo;
+            rm -rf /wp-content/themes/twentytwentythree;
+            rm -rf /wp-content/themes/twentytwentyfour;
+            mirror -R --parallel=4 \
               --exclude .git/ \
               --exclude .github/ \
               --exclude wp-config.php \
