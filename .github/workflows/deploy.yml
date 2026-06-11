@@ -17,7 +17,7 @@ jobs:
             set sftp:auto-confirm yes;
             set net:max-retries 3;
             open sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }};
-            mirror -R --parallel=4 \
+            mirror -R --delete --parallel=4 \
               --exclude .git/ \
               --exclude .github/ \
               --exclude wp-config.php \
