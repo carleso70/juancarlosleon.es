@@ -9,21 +9,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro
+        run: npm run build
+
       - name: Install lftp
         run: sudo apt-get install -y lftp
+
       - name: SFTP Deploy
         run: |
           lftp -c "
             set sftp:auto-confirm yes;
             set net:max-retries 3;
             open sftp://${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_SERVER }};
-            rm -rf /wp-content/themes/twentytwentytwo;
-            rm -rf /wp-content/themes/twentytwentythree;
-            rm -rf /wp-content/themes/twentytwentyfour;
-            mirror -R --parallel=4 \
+            mirror -R --parallel=4 --delete \
               --exclude .git/ \
-              --exclude .github/ \
-              --exclude wp-config.php \
-              ./ /;
+              ./dist/ /;
             bye
-          " || true
+          "
