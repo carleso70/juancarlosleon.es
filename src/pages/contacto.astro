@@ -1,0 +1,124 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Contacto — ${SITE_TITLE}`} description="Escríbeme. Prometo leerlo." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1 class="page-title">Contacto</h1>
+			<p class="intro">Si tienes algo que decirme, una pregunta, una propuesta, o simplemente quieres compartir tu canción favorita — adelante.</p>
+
+			<form action="https://formspree.io/f/hola@juancarlosleon.es" method="POST">
+				<div class="field">
+					<label for="nombre">Nombre</label>
+					<input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+				</div>
+
+				<div class="field">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required placeholder="tu@email.com" />
+				</div>
+
+				<div class="field">
+					<label for="asunto">Asunto</label>
+					<input type="text" id="asunto" name="asunto" required placeholder="¿De qué va esto?" />
+				</div>
+
+				<div class="field">
+					<label for="mensaje">Mensaje</label>
+					<textarea id="mensaje" name="mensaje" required rows="6" placeholder="Escribe aquí..."></textarea>
+				</div>
+
+				<div class="field">
+					<label for="cancion">Canción favorita <span class="optional">(opcional, pero importante)</span></label>
+					<input type="text" id="cancion" name="cancion" placeholder="Artista — Título" />
+				</div>
+
+				<button type="submit">Enviar</button>
+			</form>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-title {
+		font-size: 1.75rem;
+		margin-bottom: 0.75rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #D8D6CE;
+	}
+	.intro {
+		color: #5F5E5A;
+		font-size: 1rem;
+		margin-bottom: 2.5rem;
+		max-width: 520px;
+	}
+	form {
+		max-width: 560px;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.field {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+	label {
+		font-size: 0.875rem;
+		font-weight: 500;
+		color: #2C2C2A;
+	}
+	.optional {
+		font-weight: 400;
+		color: #888780;
+		font-size: 0.8rem;
+	}
+	input, textarea {
+		font-family: 'Inter', system-ui, sans-serif;
+		font-size: 0.95rem;
+		color: #2C2C2A;
+		background: #fff;
+		border: 1px solid #D8D6CE;
+		border-radius: 6px;
+		padding: 0.6rem 0.85rem;
+		outline: none;
+		transition: border-color 0.15s;
+		width: 100%;
+	}
+	input:focus, textarea:focus {
+		border-color: #6B8F71;
+	}
+	input::placeholder, textarea::placeholder {
+		color: #B4B2A9;
+	}
+	textarea {
+		resize: vertical;
+		line-height: 1.6;
+	}
+	button {
+		align-self: flex-start;
+		background: #6B8F71;
+		color: #fff;
+		font-family: 'Inter', system-ui, sans-serif;
+		font-size: 0.95rem;
+		font-weight: 500;
+		padding: 0.65rem 1.5rem;
+		border: none;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: background 0.15s;
+	}
+	button:hover {
+		background: #4a6b50;
+	}
+</style>
