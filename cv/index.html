@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>CV — Juan Carlos León</title>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		html, body { height: 100%; background: #F9F9F7; }
+		body {
+			display: flex;
+			flex-direction: column;
+			font-family: 'Inter', system-ui, sans-serif;
+		}
+		header {
+			padding: 0.75rem 1.5rem;
+			border-bottom: 1px solid #D8D6CE;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #F9F9F7;
+		}
+		header a {
+			font-family: Georgia, serif;
+			font-size: 1rem;
+			font-weight: 700;
+			color: #2C2C2A;
+			text-decoration: none;
+		}
+		header a:hover { color: #6B8F71; }
+		.download {
+			font-size: 0.85rem;
+			color: #6B8F71;
+			font-weight: 500;
+			text-decoration: none;
+		}
+		.download:hover { color: #4a6b50; }
+		iframe {
+			flex: 1;
+			width: 100%;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<a href="https://juancarlosleon.es">← Juan Carlos León</a>
+		<a class="download" href="cv.pdf" download>Descargar PDF</a>
+	</header>
+	<iframe src="cv.pdf" title="CV Juan Carlos León"></iframe>
+</body>
+</html>
