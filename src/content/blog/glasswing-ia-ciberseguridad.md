@@ -1,5 +1,5 @@
 ---
-title: 'Una IA que encuentra fallos de seguridad mejor que los mejores hackers del mundo. Y eso es buena noticia.'
+title: 'Glasswing: cuando la IA se pone de parte de los buenos.'
 description: 'Anthropic ha lanzado el proyecto Glasswing junto a doce grandes tecnológicas para usar IA en la búsqueda de vulnerabilidades críticas. La pregunta no es si es posible. Es quién lo controla.'
 pubDate: '2026-06-12'
 heroImage: '../../assets/blog-placeholder-2.jpg'
@@ -20,6 +20,8 @@ Y aquí viene la parte que a mucha gente le genera vértigo: este modelo ya es m
 Es la pregunta correcta. Y la respuesta honesta es: depende de quién la controle y con qué intención. Anthropic ha optado por el enfoque de "mejor nosotros que otros" — desarrollar estas capacidades de forma controlada, con socios auditados, con 90 días de plazo para publicar resultados, y con 100 millones de dólares en créditos para que organizaciones de código abierto también puedan beneficiarse.
 
 Es un argumento razonable. No es el único argumento posible, pero es razonable.
+
+Y aquí es donde Glasswing va más allá de ser un simple proyecto técnico. Su propósito no es solo encontrar vulnerabilidades — es establecer un perímetro de control sobre quién puede usar Mythos y para qué. Acceso restringido a socios auditados, uso supervisado, resultados públicos en 90 días. Un intento deliberado de que una herramienta con ese potencial destructivo no acabe en manos equivocadas. O al menos, de que no acabe *fácilmente*.
 
 Lo que sí es innegable es que el software que usamos a diario tiene agujeros. Muchos. Y hasta ahora los encontraban principalmente los que querían explotarlos. Que la balanza empiece a inclinarse hacia el otro lado no parece mala noticia.
 

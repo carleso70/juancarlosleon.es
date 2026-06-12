@@ -1,86 +1,110 @@
 ---
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
 	</head>
-
 	<body>
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
+				<header class="post-header">
+					<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+					<h1>{title}</h1>
+					{updatedDate && (
+						<p class="updated">Actualizado el {updatedDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+					)}
+					<hr />
+				</header>
 				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
 					<slot />
 				</div>
+				<footer class="post-footer">
+					<a href="/blog">← Volver al blog</a>
+				</footer>
 			</article>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.post-header {
+		padding: 2.5rem 0 0;
+		margin-bottom: 0;
+	}
+	.post-header time {
+		font-size: 0.8rem;
+		color: #888780;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.post-header h1 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 2.25rem;
+		line-height: 1.2;
+		margin: 0.75rem 0 1.5rem;
+		max-width: 680px;
+	}
+	.updated {
+		font-size: 0.85rem;
+		color: #888780;
+		font-style: italic;
+		margin: 0 0 1rem;
+	}
+	hr {
+		border: none;
+		border-top: 1px solid #D8D6CE;
+		margin: 0 0 2.5rem;
+	}
+	.prose {
+		max-width: 660px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #2C2C2A;
+	}
+	.prose p {
+		margin-bottom: 1.5rem;
+	}
+	.prose strong {
+		font-weight: 500;
+		color: #1a1a18;
+	}
+	.prose em {
+		font-style: italic;
+		color: #5F5E5A;
+	}
+	.prose blockquote {
+		border-left: 3px solid #6B8F71;
+		padding: 0.25rem 0 0.25rem 1.25rem;
+		margin: 1.5rem 0;
+		color: #5F5E5A;
+		font-style: italic;
+	}
+	.post-footer {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+	}
+	.post-footer a {
+		font-size: 0.9rem;
+		color: #6B8F71;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.post-footer a:hover {
+		color: #4a6b50;
+	}
+	@media (max-width: 720px) {
+		.post-header h1 { font-size: 1.75rem; }
+	}
+</style>
