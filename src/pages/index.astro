@@ -36,7 +36,7 @@ const posts = (await getCollection('blog')).sort(
 						</a>
 					))}
 				</div>
-				<a href="/blog" class="all-posts">Ver todas las entradas →</a>
+				<a href="/blog" class="btn">Ver más</a>
 			</section>
 		</main>
 		<Footer />
@@ -92,7 +92,7 @@ const posts = (await getCollection('blog')).sort(
 		flex-direction: column;
 		gap: 0.5rem;
 		padding: 1.25rem;
-		border: 1px solid #D8D6CE;
+		border: 1px solid #B8D4BC;
 		border-radius: 10px;
 		text-decoration: none;
 		color: inherit;
@@ -124,15 +124,6 @@ const posts = (await getCollection('blog')).sort(
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
-	}
-	.all-posts {
-		font-size: 0.9rem;
-		color: #6B8F71;
-		font-weight: 500;
-		text-decoration: none;
-	}
-	.all-posts:hover {
-		color: #4a6b50;
 	}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2rem; }
