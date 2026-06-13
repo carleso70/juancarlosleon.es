@@ -25,7 +25,6 @@ const posts = (await getCollection('blog')).sort(
 			</section>
 
 			<section class="recent-posts">
-				<h2>Últimas entradas</h2>
 				<div class="cards">
 					{posts.map(post => (
 						<a href={`/blog/${post.id}/`} class="card">
