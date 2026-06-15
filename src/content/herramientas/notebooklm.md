@@ -2,7 +2,9 @@
 title: 'NotebookLM: dale vida a tus documentos'
 description: 'Google tiene una herramienta que no hace mucho ruido pero que merece más atención de la que recibe. Le subes tus documentos y los convierte en resúmenes, podcasts o presentaciones.'
 pubDate: '2026-06-15'
-heroImage: '../../assets/blog-placeholder-1.jpg'
+url: 'https://notebooklm.google.com'
+gratis: true
+etiqueta: 'Productividad'
 ---
 
 Google tiene una herramienta que no hace mucho ruido pero que merece más atención de la que recibe. Se llama NotebookLM y la idea es simple: le subes tus documentos — apuntes, PDFs, artículos, informes — y puedes hacerle preguntas, pedirle resúmenes, generar presentaciones o incluso convertir todo ese material en un podcast con dos voces que debaten sobre el contenido. Sí, has leído bien.
