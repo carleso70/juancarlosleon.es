@@ -8,6 +8,10 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ).slice(0, 3);
+
+const herramientas = (await getCollection('herramientas')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
 ---
 
 <!doctype html>
@@ -36,6 +40,24 @@ const posts = (await getCollection('blog')).sort(
 					))}
 				</div>
 				<a href="/blog" class="btn">Ver más</a>
+			</section>
+
+			<section class="recent-tools">
+				<div class="cards">
+					{herramientas.map(h => (
+						<a href={`/herramientas/${h.id}/`} class="card">
+							<div class="card-top">
+								<span class="etiqueta">{h.data.etiqueta}</span>
+								<span class:list={['badge', h.data.gratis ? 'gratis' : 'pago']}>
+									{h.data.gratis ? 'Gratis' : 'De pago'}
+								</span>
+							</div>
+							<h3>{h.data.title}</h3>
+							<p>{h.data.description}</p>
+						</a>
+					))}
+				</div>
+				<a href="/herramientas" class="btn">Ver herramientas</a>
 			</section>
 		</main>
 		<Footer />
@@ -123,6 +145,36 @@ const posts = (await getCollection('blog')).sort(
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
+	}
+	.recent-tools {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+	}
+	.card-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.etiqueta {
+		font-size: 0.75rem;
+		color: #888780;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.badge {
+		font-size: 0.7rem;
+		font-weight: 500;
+		padding: 2px 8px;
+		border-radius: 20px;
+	}
+	.badge.gratis {
+		background: #E8F4EA;
+		color: #4a6b50;
+	}
+	.badge.pago {
+		background: #F4EDE8;
+		color: #8B5E3C;
 	}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2rem; }
