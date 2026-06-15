@@ -16,3 +16,7 @@ El vídeo es la función más limitada de momento — cumple, pero no esperes un
 ¿Para quién es útil NotebookLM? Para cualquiera que maneje mucha información y quiera procesarla más rápido — estudiantes, profesionales que leen muchos informes, formadores que preparan contenido. No requiere saber nada de tecnología. Solo subir archivos y preguntar.
 
 Lo mejor, con diferencia, es que tiene versión gratuita. Así que la única forma de saber si te sirve es probarlo tú mismo. Aquí no hay gurús que valgan.
+
+---
+
+*Canción del post: [Notebook — Fables](https://open.spotify.com/intl-es/track/26FutH7PgueF0Jjrj5n7x7)*
