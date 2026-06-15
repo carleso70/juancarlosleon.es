@@ -26,3 +26,7 @@ Sí, y da para mucho. La versión de pago añade modelos más potentes y más b�
 **Por dónde empezar**
 
 Entra en perplexity.ai o descarga la app. Y si quieres ir un paso más allá, Perplexity tiene también su propio navegador — Comet — que integra la IA directamente en la experiencia de navegación, sin necesidad de abrir otra pestaña. Todavía en fases iniciales, pero apunta muy alto. Úsalo exactamente como usarías Google durante una semana. Casi nadie vuelve atrás.
+
+---
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2QCEn9YdF8T0VLoRgttIyW" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

@@ -21,4 +21,4 @@ Lo mejor, con diferencia, es que tiene versión gratuita. Así que la única for
 
 ---
 
-*Canción del post: [Notebook — Fables](https://open.spotify.com/intl-es/track/26FutH7PgueF0Jjrj5n7x7)*
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/26FutH7PgueF0Jjrj5n7x7" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
