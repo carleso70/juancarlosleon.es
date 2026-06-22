@@ -12,6 +12,10 @@ const posts = (await getCollection('blog')).sort(
 const herramientas = (await getCollection('herramientas')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ).slice(0, 3);
+
+const contraindicaciones = (await getCollection('contraindicaciones')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
 ---
 
 <!doctype html>
@@ -58,6 +62,20 @@ const herramientas = (await getCollection('herramientas')).sort(
 					))}
 				</div>
 				<a href="/herramientas" class="btn">Ver herramientas</a>
+			</section>
+
+			<section class="recent-contra">
+				<div class="cards cards-contra">
+					{contraindicaciones.map(post => (
+						<a href={`/contraindicaciones/${post.id}/`} class="card card-contra">
+							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+							<h3>{post.data.title}</h3>
+							<p>{post.data.description}</p>
+							<span class="fuente-tag">{post.data.fuente}</span>
+						</a>
+					))}
+				</div>
+				<a href="/contraindicaciones" class="btn btn-contra">Ver contraindicaciones</a>
 			</section>
 		</main>
 		<Footer />
@@ -175,6 +193,31 @@ const herramientas = (await getCollection('herramientas')).sort(
 	.badge.pago {
 		background: #F4EDE8;
 		color: #8B5E3C;
+	}
+	.recent-contra {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+	}
+	.cards-contra .card {
+		border-color: #E8D4C8;
+	}
+	.card-contra:hover {
+		border-color: #C17A5A !important;
+		box-shadow: 0 2px 12px rgba(193, 122, 90, 0.1) !important;
+	}
+	.fuente-tag {
+		font-size: 0.72rem;
+		color: #C17A5A;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.btn-contra {
+		background: #C17A5A;
+	}
+	.btn-contra:hover {
+		background: #9e5c3a !important;
 	}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2rem; }

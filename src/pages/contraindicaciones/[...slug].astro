@@ -1,0 +1,131 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('contraindicaciones');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<'contraindicaciones'>;
+
+const post = Astro.props;
+const { title, description, pubDate, fuente, urlFuente } = post.data;
+const { Content } = await render(post);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} type="article" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<header class="post-header">
+					<span class="label">Contraindicaciones</span>
+					<h1>{title}</h1>
+					<p class="description">{description}</p>
+					<div class="meta">
+						<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+						<span class="sep">·</span>
+						<a href={urlFuente} target="_blank" rel="noopener noreferrer" class="fuente">{fuente} →</a>
+					</div>
+					<hr />
+				</header>
+				<div class="prose">
+					<Content />
+				</div>
+				<footer class="post-footer">
+					<a href="/contraindicaciones">← Volver a Contraindicaciones</a>
+				</footer>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.post-header {
+		padding: 2.5rem 0 0;
+	}
+	.label {
+		font-size: 0.75rem;
+		color: #C17A5A;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: 500;
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+	h1 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 2.25rem;
+		line-height: 1.2;
+		margin: 0 0 0.75rem;
+		max-width: 680px;
+	}
+	.description {
+		font-size: 1.05rem;
+		color: #5F5E5A;
+		margin: 0 0 1.25rem;
+		max-width: 600px;
+	}
+	.meta {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 0.85rem;
+		color: #888780;
+	}
+	.sep { color: #D8D6CE; }
+	.fuente {
+		color: #C17A5A;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.fuente:hover { text-decoration: underline; }
+	hr {
+		border: none;
+		border-top: 1px solid #D8D6CE;
+		margin: 0 0 2.5rem;
+	}
+	.prose {
+		max-width: 660px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #2C2C2A;
+	}
+	.prose p { margin-bottom: 1.5rem; }
+	.prose strong { font-weight: 500; color: #1a1a18; }
+	.prose em { font-style: italic; color: #5F5E5A; }
+	.prose blockquote {
+		border-left: 3px solid #C17A5A;
+		padding: 0.25rem 0 0.25rem 1.25rem;
+		margin: 1.5rem 0;
+		color: #5F5E5A;
+		font-style: italic;
+	}
+	.post-footer {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+	}
+	.post-footer a {
+		font-size: 0.9rem;
+		color: #C17A5A;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.post-footer a:hover { color: #9e5c3a; }
+	@media (max-width: 720px) {
+		h1 { font-size: 1.75rem; }
+	}
+</style>

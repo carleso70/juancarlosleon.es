@@ -1,0 +1,100 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('contraindicaciones')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title="Contraindicaciones" description="Noticias y estudios sobre los efectos adversos de la IA. Sin alarmismo, pero sin mirar hacia otro lado." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-header">
+				<h1>Contraindicaciones</h1>
+				<p>Noticias y estudios sobre los efectos adversos de la IA. Sin alarmismo, pero sin mirar hacia otro lado.</p>
+			</section>
+			<section class="listing">
+				{posts.map(post => (
+					<a href={`/contraindicaciones/${post.id}/`} class="card">
+						<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+						<h2>{post.data.title}</h2>
+						<p>{post.data.description}</p>
+						<span class="fuente">{post.data.fuente}</span>
+					</a>
+				))}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-header {
+		padding: 2.5rem 0 2rem;
+		border-bottom: 1px solid #D8D6CE;
+		margin-bottom: 2.5rem;
+	}
+	.page-header h1 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 2.25rem;
+		margin-bottom: 0.75rem;
+	}
+	.page-header p {
+		font-size: 1.05rem;
+		color: #5F5E5A;
+		max-width: 560px;
+	}
+	.listing {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+		padding-bottom: 3rem;
+	}
+	.card {
+		display: block;
+		padding: 1.5rem;
+		border: 1px solid #D8D6CE;
+		border-radius: 10px;
+		text-decoration: none;
+		color: inherit;
+		transition: border-color 0.15s, box-shadow 0.15s;
+	}
+	.card:hover {
+		border-color: #C17A5A;
+		box-shadow: 0 2px 12px rgba(193, 122, 90, 0.1);
+	}
+	time {
+		font-size: 0.75rem;
+		color: #888780;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+	h2 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.2rem;
+		line-height: 1.35;
+		margin: 0 0 0.5rem;
+		color: #2C2C2A;
+	}
+	p {
+		font-size: 0.9rem;
+		color: #5F5E5A;
+		line-height: 1.6;
+		margin: 0 0 0.75rem;
+	}
+	.fuente {
+		font-size: 0.75rem;
+		color: #C17A5A;
+		font-weight: 500;
+	}
+</style>

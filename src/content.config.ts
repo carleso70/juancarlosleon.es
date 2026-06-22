@@ -26,4 +26,15 @@ const herramientas = defineCollection({
 	}),
 });
 
-export const collections = { blog, herramientas };
+const contraindicaciones = defineCollection({
+	loader: glob({ base: './src/content/contraindicaciones', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		fuente: z.string(),
+		urlFuente: z.string().url(),
+	}),
+});
+
+export const collections = { blog, herramientas, contraindicaciones };
