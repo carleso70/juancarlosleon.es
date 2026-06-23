@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
 
 export async function getStaticPaths() {
 	const herramientas = await getCollection('herramientas');
@@ -45,6 +46,7 @@ const { Content } = await render(herramienta);
 				<div class="prose">
 					<Content />
 				</div>
+				<ShareButtons url={Astro.url.href} title={title} />
 				<footer class="post-footer">
 					<a href="/herramientas">← Volver a herramientas</a>
 				</footer>

@@ -1,0 +1,198 @@
+{
+  "name": "Rastreador Contraindicaciones",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      },
+      "name": "Cada mañana a las 8",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://www.theguardian.com/technology/artificialintelligence/rss",
+        "options": {}
+      },
+      "name": "RSS The Guardian",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [460, 180]
+    },
+    {
+      "parameters": {
+        "url": "https://www.technologyreview.com/feed/",
+        "options": {}
+      },
+      "name": "RSS MIT Tech Review",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [460, 320]
+    },
+    {
+      "parameters": {
+        "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+        "options": {}
+      },
+      "name": "RSS BBC Tech",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [460, 460]
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "name": "Unir fuentes",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [700, 320]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.first().json.data || [];\nreturn items.map(item => ({\n  json: {\n    title: item.title || '',\n    link: item.link || '',\n    snippet: item.contentSnippet || item.content || ''\n  }\n}));"
+      },
+      "name": "Extraer artículos",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 320]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "x-api-key",
+              "value": "TU_API_KEY_AQUI"
+            },
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": []
+        },
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"claude-haiku-4-5-20251001\",\n  \"max_tokens\": 100,\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Analiza esta noticia sobre IA:\\n\\nTítulo: {{ $json.title }}\\nDescripción: {{ $json.snippet }}\\n\\nResponde SOLO con JSON, sin texto adicional: {\\\"incluir\\\": true o false, \\\"razon\\\": \\\"una frase breve\\\"}\\n\\nIncluir si: trata efectos negativos o riesgos de IA con datos o estudios reales, invita a reflexión crítica, fuente fiable.\\nExcluir si: es noticia de producto, lanzamiento, inversión, opinión sin datos, o sensacionalista.\"\n    }\n  ]\n}",
+        "options": {}
+      },
+      "name": "Filtro Claude",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1140, 320]
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $input.item.json;\nconst content = response.content?.[0]?.text || '{}';\ntry {\n  const parsed = JSON.parse(content);\n  return [{\n    json: {\n      ...$input.item.json,\n      _incluir: parsed.incluir,\n      _razon: parsed.razon\n    }\n  }];\n} catch(e) {\n  return [{ json: { ...$input.item.json, _incluir: false, _razon: 'error parsing' } }];\n}"
+      },
+      "name": "Parsear respuesta",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 320]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {},
+          "conditions": [
+            {
+              "leftValue": "={{ $json._incluir }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ]
+        }
+      },
+      "name": "¿Incluir?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1580, 320]
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "name": "Agrupar candidatos",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [1800, 240]
+    },
+    {
+      "parameters": {
+        "fromEmail": "hola@juancarlosleon.es",
+        "toEmail": "carleso70@gmail.com",
+        "subject": "=Contraindicaciones del día — {{ $now.format('dd/MM/yyyy') }}",
+        "emailType": "html",
+        "message": "=<h2 style=\"color:#C17A5A\">Candidatos para Contraindicaciones</h2><p>Noticias seleccionadas hoy por el rastreador:</p>{{ $json.data.map(item => `<hr style=\"border-color:#eee\"><h3><a href=\"${item.link}\" style=\"color:#2C2C2A\">${item.title}</a></h3><p style=\"color:#666;font-size:14px\">${item.snippet || ''}</p><p style=\"color:#C17A5A;font-size:12px\">✓ ${item._razon || ''}</p>`).join('') }}<br><br><p style=\"color:#aaa;font-size:12px\">Generado automáticamente. Tú decides qué entra en Contraindicaciones.</p>",
+        "options": {
+          "allowUnauthorizedCerts": false
+        }
+      },
+      "name": "Email a Juan Carlos",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [2020, 240]
+    }
+  ],
+  "connections": {
+    "Cada mañana a las 8": {
+      "main": [
+        [
+          {"node": "RSS The Guardian", "type": "main", "index": 0},
+          {"node": "RSS MIT Tech Review", "type": "main", "index": 0},
+          {"node": "RSS BBC Tech", "type": "main", "index": 0}
+        ]
+      ]
+    },
+    "RSS The Guardian": {
+      "main": [[{"node": "Unir fuentes", "type": "main", "index": 0}]]
+    },
+    "RSS MIT Tech Review": {
+      "main": [[{"node": "Unir fuentes", "type": "main", "index": 0}]]
+    },
+    "RSS BBC Tech": {
+      "main": [[{"node": "Unir fuentes", "type": "main", "index": 0}]]
+    },
+    "Unir fuentes": {
+      "main": [[{"node": "Extraer artículos", "type": "main", "index": 0}]]
+    },
+    "Extraer artículos": {
+      "main": [[{"node": "Filtro Claude", "type": "main", "index": 0}]]
+    },
+    "Filtro Claude": {
+      "main": [[{"node": "Parsear respuesta", "type": "main", "index": 0}]]
+    },
+    "Parsear respuesta": {
+      "main": [[{"node": "¿Incluir?", "type": "main", "index": 0}]]
+    },
+    "¿Incluir?": {
+      "main": [[{"node": "Agrupar candidatos", "type": "main", "index": 0}]]
+    },
+    "Agrupar candidatos": {
+      "main": [[{"node": "Email a Juan Carlos", "type": "main", "index": 0}]]
+    }
+  }
+}

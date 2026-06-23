@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -50,6 +51,7 @@ const schemaBlogPost = {
 				<div class="prose">
 					<slot />
 				</div>
+				<ShareButtons url={Astro.url.href} title={title} />
 				<footer class="post-footer">
 					<a href="/blog">← Volver al blog</a>
 				</footer>
