@@ -46,7 +46,8 @@ const schemaBlogPost = {
 					{updatedDate && (
 						<p class="updated">Actualizado el {updatedDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
 					)}
-					<hr />
+					<ShareButtons url={Astro.url.href} title={title} />
+				<hr />
 				</header>
 				<div class="prose">
 					<slot />
