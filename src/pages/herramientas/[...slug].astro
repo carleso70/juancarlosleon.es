@@ -38,11 +38,11 @@ const { Content } = await render(herramienta);
 					</div>
 					<h1>{title}</h1>
 					<p class="description">{description}</p>
-					<ShareButtons url={Astro.url.href} title={title} />
 					<a href={url} target="_blank" rel="noopener noreferrer" class="btn-web">
 						Visitar {title} →
 					</a>
 					<hr />
+					<ShareButtons url={Astro.url.href} title={title} />
 				</header>
 				<div class="prose">
 					<Content />

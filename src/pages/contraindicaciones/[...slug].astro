@@ -33,13 +33,13 @@ const { Content } = await render(post);
 					<span class="label">Contraindicaciones</span>
 					<h1>{title}</h1>
 					<p class="description">{description}</p>
-					<ShareButtons url={Astro.url.href} title={title} />
 					<div class="meta">
 						<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 						<span class="sep">·</span>
 						<a href={urlFuente} target="_blank" rel="noopener noreferrer" class="fuente">{fuente} →</a>
 					</div>
 					<hr />
+					<ShareButtons url={Astro.url.href} title={title} />
 				</header>
 				<div class="prose">
 					<Content />
