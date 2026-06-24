@@ -29,4 +29,6 @@ Entra en perplexity.ai o descarga la app. Y si quieres ir un paso más allá, Pe
 
 ---
 
+<a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer" class="btn-web">Visitar Perplexity →</a>
+
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2QCEn9YdF8T0VLoRgttIyW" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

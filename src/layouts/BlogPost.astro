@@ -41,12 +41,15 @@ const schemaBlogPost = {
 		<main>
 			<article>
 				<header class="post-header">
-					<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+					<span class="label">Blog</span>
 					<h1>{title}</h1>
-					{updatedDate && (
-						<p class="updated">Actualizado el {updatedDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-					)}
-				<hr />
+					{description && <p class="description">{description}</p>}
+					<div class="meta">
+						<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+						{updatedDate && <span class="sep">·</span>}
+						{updatedDate && <span class="updated">Actualizado el {updatedDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</span>}
+					</div>
+					<hr />
 					<ShareButtons url={Astro.url.href} title={title} />
 				</header>
 				<div class="prose">
@@ -66,24 +69,48 @@ const schemaBlogPost = {
 		padding: 2.5rem 0 0;
 		margin-bottom: 0;
 	}
-	.post-header time {
-		font-size: 0.8rem;
-		color: #888780;
+	.label {
+		font-size: 0.75rem;
+		color: #6B8F71;
 		text-transform: uppercase;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.08em;
+		font-weight: 500;
+		display: block;
+		margin-bottom: 0.75rem;
 	}
 	.post-header h1 {
 		font-family: 'Playfair Display', Georgia, serif;
 		font-size: 2.25rem;
 		line-height: 1.2;
-		margin: 0.75rem 0 1.5rem;
+		margin: 0 0 0.75rem;
 		max-width: 680px;
 	}
+	.description {
+		font-size: 1.05rem;
+		color: #5F5E5A;
+		margin: 0 0 1.25rem;
+		max-width: 600px;
+		line-height: 1.6;
+	}
+	.meta {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 0.85rem;
+		color: #888780;
+	}
+	.meta time {
+		font-size: 0.8rem;
+		color: #888780;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.sep { color: #D8D6CE; }
 	.updated {
 		font-size: 0.85rem;
 		color: #888780;
 		font-style: italic;
-		margin: 0 0 1rem;
 	}
 	hr {
 		border: none;

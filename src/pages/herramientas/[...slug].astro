@@ -30,17 +30,14 @@ const { Content } = await render(herramienta);
 		<main>
 			<article>
 				<header class="post-header">
-					<div class="meta">
-						<span class="etiqueta">{etiqueta}</span>
+					<div class="label-row">
+						<span class="label">{etiqueta}</span>
 						<span class:list={['badge', gratis ? 'gratis' : 'pago']}>
 							{gratis ? 'Gratis' : 'De pago'}
 						</span>
 					</div>
 					<h1>{title}</h1>
 					<p class="description">{description}</p>
-					<a href={url} target="_blank" rel="noopener noreferrer" class="btn-web">
-						Visitar {title} →
-					</a>
 					<hr />
 					<ShareButtons url={Astro.url.href} title={title} />
 				</header>
@@ -127,6 +124,22 @@ const { Content } = await render(herramienta);
 		color: #2C2C2A;
 	}
 	.prose p { margin-bottom: 1.5rem; }
+	.prose :global(.btn-web), .prose a.btn-web {
+		display: inline-block;
+		background: #6B8F71;
+		color: #fff;
+		padding: 0.6rem 1.25rem;
+		border-radius: 6px;
+		font-size: 0.9rem;
+		font-weight: 500;
+		text-decoration: none;
+		margin-bottom: 1.5rem;
+		transition: background 0.15s;
+	}
+	.prose :global(.btn-web):hover, .prose a.btn-web:hover {
+		background: #4a6b50;
+		color: #fff;
+	}
 	.prose strong { font-weight: 500; color: #1a1a18; }
 	.prose em { font-style: italic; color: #5F5E5A; }
 	.prose blockquote {

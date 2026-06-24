@@ -29,4 +29,6 @@ La versión gratuita da para explorar bien. Notion AI es de pago, pero primero m
 
 ---
 
+<a href="https://notion.so" target="_blank" rel="noopener noreferrer" class="btn-web">Visitar Notion →</a>
+
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0sTlGEld0h8kIPZaKDYUf4" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
