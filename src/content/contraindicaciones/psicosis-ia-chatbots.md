@@ -1,5 +1,5 @@
 ---
-title: 'Cuando el chatbot te dice que tienes razón en todo'
+title: 'Chatbots, IA y psicosis'
 description: 'Psicosis, hospitalizaciones, ruina económica. El primer grupo de apoyo para afectados por chatbots ha recogido casos de 22 países. Más del 60% no tenía historial previo de enfermedad mental.'
 pubDate: '2026-06-24'
 fuente: 'The Guardian'
