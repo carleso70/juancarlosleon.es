@@ -33,3 +33,5 @@ Con audio de mala calidad o mucho ruido de fondo, la precisión baja notablement
 ---
 
 <a href="https://openai.com/research/whisper" target="_blank" rel="noopener noreferrer" class="btn-web">Visitar Whisper →</a>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3sVFoJDU2ubr3bDRXfbglE" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
