@@ -52,7 +52,7 @@ const clientes = [
 				{clientes.length > 0 ? (
 					<div class="logos">
 						{clientes.map(c => (
-							<img src={c.logo} alt={c.nombre} class="cliente-logo" />
+							<img src={c.logo} alt={c.nombre} class:list={['cliente-logo', c.nombre === 'Milka' && 'cliente-logo-grande']} />
 						))}
 					</div>
 				) : (
@@ -121,6 +121,10 @@ const clientes = [
 		filter: grayscale(100%);
 		opacity: 0.7;
 		transition: opacity 0.15s, filter 0.15s;
+	}
+	.cliente-logo-grande {
+		max-height: 70px;
+		max-width: 200px;
 	}
 	.cliente-logo:hover {
 		filter: grayscale(0%);
