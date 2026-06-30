@@ -34,28 +34,31 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 64px;
+		height: 76px;
 	}
 	.logo {
 		font-family: 'Playfair Display', Georgia, serif;
-		font-size: 1.2rem;
+		font-size: 1.7rem;
 		font-weight: 700;
 		color: #fff;
 		text-decoration: none;
 		letter-spacing: -0.01em;
 		display: flex;
 		flex-direction: column;
-		line-height: 1.2;
+		line-height: 1.15;
 	}
 	.logo:hover {
 		color: #E8E4DC;
 	}
 	.logo-sub {
 		font-family: 'Inter', sans-serif;
-		font-size: 0.6rem;
+		font-size: 0.68rem;
 		font-weight: 400;
 		color: #E8E4DC;
-		letter-spacing: 0.02em;
+		letter-spacing: 0.03em;
+	}
+	@media (max-width: 480px) {
+		.logo { font-size: 1.35rem; }
 	}
 	.nav-links {
 		display: flex;
