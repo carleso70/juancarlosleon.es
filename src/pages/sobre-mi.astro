@@ -1,0 +1,116 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+
+const description = 'Programador, formador y consultor. También escritor y músico.';
+
+const clientes = [
+	// { nombre: 'Nombre Empresa', logo: '/clientes/empresa.svg' },
+];
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Sobre mí — ${SITE_TITLE}`} description={description} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-header">
+				<span class="label">Sobre mí</span>
+				<h1>Juan Carlos León</h1>
+				<p class="description">{description}</p>
+			</section>
+
+			<div class="prose">
+				<p><em>Aquí irá la descripción definitiva.</em></p>
+			</div>
+
+			<section class="clientes">
+				<h2>Clientes</h2>
+				{clientes.length > 0 ? (
+					<div class="logos">
+						{clientes.map(c => (
+							<img src={c.logo} alt={c.nombre} class="cliente-logo" />
+						))}
+					</div>
+				) : (
+					<p class="empty">Próximamente.</p>
+				)}
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-header {
+		padding: 2.5rem 0 0;
+	}
+	.label {
+		font-size: 0.75rem;
+		color: #6B8F71;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: 500;
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+	h1 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 2.25rem;
+		line-height: 1.2;
+		margin: 0 0 0.75rem;
+	}
+	.description {
+		font-size: 1.05rem;
+		color: #5F5E5A;
+		max-width: 600px;
+		line-height: 1.6;
+		margin: 0 0 2rem;
+	}
+	.prose {
+		max-width: 660px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #2C2C2A;
+		padding-bottom: 1rem;
+	}
+	.clientes {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+		padding-bottom: 3rem;
+	}
+	.clientes h2 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.4rem;
+		margin: 0 0 1.5rem;
+	}
+	.logos {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 2.5rem;
+	}
+	.cliente-logo {
+		max-height: 40px;
+		max-width: 140px;
+		object-fit: contain;
+		filter: grayscale(100%);
+		opacity: 0.7;
+		transition: opacity 0.15s, filter 0.15s;
+	}
+	.cliente-logo:hover {
+		filter: grayscale(0%);
+		opacity: 1;
+	}
+	.empty {
+		font-size: 0.9rem;
+		color: #888780;
+		font-style: italic;
+	}
+</style>
