@@ -4,10 +4,13 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	<nav>
-		<a href="/" class="logo">Juan Carlos León</a>
+		<a href="/" class="logo">
+			La FarmacIA
+			<span class="logo-sub">de Juan Carlos León</span>
+		</a>
 		<div class="nav-links">
 			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/herramientas">Herramientas</HeaderLink>
+			<HeaderLink href="/herramientas">Botiquín</HeaderLink>
 			<HeaderLink href="/contraindicaciones">Contraindicaciones</HeaderLink>
 			<HeaderLink href="/sobre-mi">Sobre mí</HeaderLink>
 			<HeaderLink href="/contacto">Contacto</HeaderLink>
@@ -40,9 +43,19 @@ import HeaderLink from './HeaderLink.astro';
 		color: #fff;
 		text-decoration: none;
 		letter-spacing: -0.01em;
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
 	}
 	.logo:hover {
 		color: #E8E4DC;
+	}
+	.logo-sub {
+		font-family: 'Inter', sans-serif;
+		font-size: 0.6rem;
+		font-weight: 400;
+		color: #E8E4DC;
+		letter-spacing: 0.02em;
 	}
 	.nav-links {
 		display: flex;
