@@ -2,8 +2,9 @@
 title: "ElevenLabs: cuando la IA aprende a hablar"
 description: "Síntesis de voz con calidad de estudio, clonación de voz propia y doblaje automático. Todo desde un navegador."
 pubDate: 2026-07-03
-badge: "Voz IA"
-urlHerramienta: "https://elevenlabs.io"
+etiqueta: "Voz IA"
+gratis: true
+url: "https://elevenlabs.io"
 ---
 
 Hay herramientas que cambian lo que es posible hacer solo. ElevenLabs es una de ellas.
