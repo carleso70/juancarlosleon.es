@@ -87,21 +87,21 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 
 <style>
 	.hero {
-		padding: 2rem 0 3rem;
+		padding: 1.5rem 0 2rem;
 		border-bottom: 1px solid #D8D6CE;
-		margin-bottom: 3rem;
+		margin-bottom: 2.5rem;
 	}
 	.hero h1 {
 		font-size: 2.4rem;
 		line-height: 1.25;
-		margin-bottom: 1.25rem;
+		margin-bottom: 1rem;
 		max-width: 700px;
 	}
 	.subtitle {
-		font-size: 1.1rem;
+		font-size: 1.05rem;
 		color: #5F5E5A;
 		max-width: 520px;
-		margin-bottom: 2rem;
+		margin-bottom: 0;
 		line-height: 1.7;
 	}
 	.btn {
@@ -120,14 +120,19 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 		color: #fff;
 	}
 	.section-title {
-		font-family: 'Playfair Display', Georgia, serif;
-		font-size: 1.4rem;
-		font-weight: 700;
-		color: #2C2C2A;
+		font-family: 'Inter', sans-serif;
+		font-size: 0.72rem;
+		font-weight: 600;
+		color: #6B8F71;
+		text-transform: uppercase;
+		letter-spacing: 0.12em;
 		margin: 0 0 1.5rem;
+		padding-left: 0.75rem;
+		border-left: 3px solid #6B8F71;
 	}
 	.section-title-contra {
 		color: #C17A5A;
+		border-left-color: #C17A5A;
 	}
 	.cards {
 		display: grid;
