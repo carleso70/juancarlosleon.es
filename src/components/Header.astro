@@ -8,16 +8,35 @@ import HeaderLink from './HeaderLink.astro';
 			La FarmacIA
 			<span class="logo-sub">de Juan Carlos León</span>
 		</a>
-		<div class="nav-links">
+		<button class="hamburger" id="menu-btn" aria-label="Abrir menú" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<div class="nav-links" id="nav-links">
 			<HeaderLink href="/blog">Noticias</HeaderLink>
 			<HeaderLink href="/herramientas">Botiquín</HeaderLink>
 			<HeaderLink href="/contraindicaciones">Contraindicaciones</HeaderLink>
 			<HeaderLink href="/sobre-mi">Sobre mí</HeaderLink>
 			<HeaderLink href="/contacto">Contacto</HeaderLink>
-
 		</div>
 	</nav>
 </header>
+
+<script>
+	const btn = document.getElementById('menu-btn');
+	const nav = document.getElementById('nav-links');
+	btn?.addEventListener('click', () => {
+		const open = nav?.classList.toggle('open');
+		btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+	});
+	nav?.querySelectorAll('a').forEach(link => {
+		link.addEventListener('click', () => {
+			nav.classList.remove('open');
+			btn?.setAttribute('aria-expanded', 'false');
+		});
+	});
+</script>
 
 <style>
 	header {
@@ -35,6 +54,7 @@ import HeaderLink from './HeaderLink.astro';
 		align-items: center;
 		justify-content: space-between;
 		height: 76px;
+		flex-wrap: wrap;
 	}
 	.logo {
 		font-family: 'Playfair Display', Georgia, serif;
@@ -57,17 +77,63 @@ import HeaderLink from './HeaderLink.astro';
 		color: #E8E4DC;
 		letter-spacing: 0.03em;
 	}
-	@media (max-width: 480px) {
-		.logo { font-size: 1.35rem; }
+	.hamburger {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		gap: 5px;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5rem;
+	}
+	.hamburger span {
+		display: block;
+		width: 24px;
+		height: 2px;
+		background: #fff;
+		border-radius: 2px;
+		transition: transform 0.2s, opacity 0.2s;
+	}
+	.hamburger[aria-expanded="true"] span:nth-child(1) {
+		transform: translateY(7px) rotate(45deg);
+	}
+	.hamburger[aria-expanded="true"] span:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger[aria-expanded="true"] span:nth-child(3) {
+		transform: translateY(-7px) rotate(-45deg);
 	}
 	.nav-links {
 		display: flex;
 		gap: 2rem;
 		align-items: center;
 	}
-	@media (max-width: 480px) {
+	@media (max-width: 640px) {
+		.hamburger {
+			display: flex;
+		}
 		.nav-links {
-			gap: 1rem;
+			display: none;
+			width: 100%;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0;
+			padding: 0.5rem 0 1rem;
+		}
+		.nav-links.open {
+			display: flex;
+		}
+		.nav-links a {
+			width: 100%;
+			padding: 0.75rem 0;
+			border-bottom: 1px solid rgba(255,255,255,0.15);
+			font-size: 1rem;
+		}
+		nav {
+			height: auto;
+			min-height: 76px;
+			align-items: center;
 		}
 	}
 </style>
