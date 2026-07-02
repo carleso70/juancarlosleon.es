@@ -32,6 +32,7 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 			</section>
 
 			<section class="recent-posts">
+				<h2 class="section-title">Noticias</h2>
 				<div class="cards">
 					{posts.map(post => (
 						<a href={`/blog/${post.id}/`} class="card">
@@ -47,6 +48,7 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 			</section>
 
 			<section class="recent-tools">
+				<h2 class="section-title">Botiquín</h2>
 				<div class="cards">
 					{herramientas.map(h => (
 						<a href={`/herramientas/${h.id}/`} class="card">
@@ -65,6 +67,7 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 			</section>
 
 			<section class="recent-contra">
+				<h2 class="section-title section-title-contra">Contraindicaciones</h2>
 				<div class="cards cards-contra">
 					{contraindicaciones.map(post => (
 						<a href={`/contraindicaciones/${post.id}/`} class="card card-contra">
@@ -116,9 +119,15 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 		background: #4a6b50;
 		color: #fff;
 	}
-	.recent-posts h2 {
-		font-size: 1.25rem;
-		margin-bottom: 1.5rem;
+	.section-title {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.4rem;
+		font-weight: 700;
+		color: #2C2C2A;
+		margin: 0 0 1.5rem;
+	}
+	.section-title-contra {
+		color: #C17A5A;
 	}
 	.cards {
 		display: grid;
