@@ -8,7 +8,7 @@ urlFuente: "https://www.aitoday.io/blogs/shadow-ai-governing-what-you-cant-see-p
 
 Hay una IA que tu empresa no controla. No es una amenaza externa: son tus propios empleados, usando ChatGPT, Claude o cualquier herramienta pública para resumir documentos internos, analizar datos o generar contenido. Sin permiso. Sin supervisión. Sin que el departamento de TI se entere.
 
-Se llama *shadow AI* — IA en la sombra — y Gartner estima que más del 40% de las empresas sufrirán algún incidente de seguridad relacionado con ella antes de 2030.
+Se llama *shadow AI* — IA en la sombra — y Gartner, la consultora de referencia en análisis tecnológico, estima que más del 40% de las empresas sufrirán algún incidente de seguridad relacionado con ella antes de 2030.
 
 El problema no es la mala fe. Es la comodidad. Un empleado sube un informe confidencial a una plataforma externa porque le ahorra tiempo. La herramienta funciona, pero hay datos que han escapado de la gobernanza de la empresa. El riesgo es invisible hasta que no lo es.
 
