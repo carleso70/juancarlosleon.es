@@ -40,4 +40,4 @@ Esa es la parte que no está en el prompt.
 
 ---
 
-¿Quieres ver cómo queda aplicado a tu web, con el informe completo y las recomendaciones afinadas? [Hablamos.](/contacto)
+Esto es posible y la mecánica genérica está aquí. Pero cada web es distinta y debe ser estudiada de forma independiente — el contexto del sector, el histórico, los objetivos concretos del negocio cambian completamente el diagnóstico. Si te interesa aplicarlo a la tuya, puedes consultarme [aquí](/contacto).
