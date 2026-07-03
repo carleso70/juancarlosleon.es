@@ -37,4 +37,14 @@ const contraindicaciones = defineCollection({
 	}),
 });
 
-export const collections = { blog, herramientas, contraindicaciones };
+const recetas = defineCollection({
+	loader: glob({ base: './src/content/recetas', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		etiqueta: z.string(),
+	}),
+});
+
+export const collections = { blog, herramientas, contraindicaciones, recetas };

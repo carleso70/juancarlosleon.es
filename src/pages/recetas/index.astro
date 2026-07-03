@@ -1,0 +1,118 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+const recetas = (await getCollection('recetas')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={`Recetas — ${SITE_TITLE}`} description="Prompts y guías prácticas para usar la IA en tu trabajo." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1 class="page-title">Recetas</h1>
+			<ul>
+				{recetas.map((receta) => (
+					<li>
+						<a href={`/recetas/${receta.id}/`}>
+							<div class="post-meta">
+								<span class="etiqueta">{receta.data.etiqueta}</span>
+								<time>{receta.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+							</div>
+							<h2 class="post-title">{receta.data.title}</h2>
+							{receta.data.description && (
+								<p class="post-desc">{receta.data.description}</p>
+							)}
+							<span class="read-more">Ver receta</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-title {
+		font-size: 1.75rem;
+		margin-bottom: 2.5rem;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #D8D6CE;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		border-bottom: 1px solid #D8D6CE;
+	}
+	li a {
+		display: block;
+		padding: 2rem 0;
+		color: inherit;
+		text-decoration: none;
+	}
+	li a:hover .post-title {
+		color: #7B6EA0;
+	}
+	.post-meta {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 0.5rem;
+	}
+	.etiqueta {
+		font-size: 0.72rem;
+		color: #fff;
+		background: #7B6EA0;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		font-weight: 500;
+		padding: 2px 8px;
+		border-radius: 20px;
+	}
+	time {
+		font-size: 0.8rem;
+		color: #888780;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.post-title {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin: 0 0 0.75rem;
+		line-height: 1.3;
+		transition: color 0.15s;
+	}
+	.post-desc {
+		font-size: 0.95rem;
+		color: #5F5E5A;
+		line-height: 1.65;
+		margin: 0 0 1rem;
+		max-width: 600px;
+	}
+	.read-more {
+		display: inline-block;
+		background: #7B6EA0;
+		color: #fff;
+		font-size: 0.85rem;
+		font-weight: 500;
+		padding: 0.5rem 1.1rem;
+		border-radius: 6px;
+		transition: background 0.15s;
+	}
+	li a:hover .read-more {
+		background: #5a4f7a;
+	}
+</style>

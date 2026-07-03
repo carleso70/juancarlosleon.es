@@ -1,0 +1,167 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+export async function getStaticPaths() {
+	const recetas = await getCollection('recetas');
+	return recetas.map((receta) => ({
+		params: { slug: receta.id },
+		props: receta,
+	}));
+}
+
+type Props = CollectionEntry<'recetas'>;
+
+const receta = Astro.props;
+const { title, description, pubDate, etiqueta } = receta.data;
+const { Content } = await render(receta);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} type="article" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<header class="post-header">
+					<span class="label">Recetas</span>
+					<h1>{title}</h1>
+					<p class="description">{description}</p>
+					<div class="meta">
+						<span class="etiqueta">{etiqueta}</span>
+						<span class="sep">·</span>
+						<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+					</div>
+					<hr />
+					<ShareButtons url={Astro.url.href} title={title} />
+					<hr />
+				</header>
+				<div class="prose">
+					<Content />
+				</div>
+				<footer class="post-footer">
+					<a href="/recetas">← Volver a Recetas</a>
+				</footer>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.post-header {
+		padding: 2.5rem 0 0;
+	}
+	.label {
+		font-size: 0.75rem;
+		color: #7B6EA0;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: 500;
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+	h1 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 2.25rem;
+		line-height: 1.2;
+		margin: 0 0 0.75rem;
+		max-width: 680px;
+	}
+	.description {
+		font-size: 1.05rem;
+		color: #5F5E5A;
+		margin: 0 0 1.25rem;
+		max-width: 600px;
+	}
+	.meta {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 0.85rem;
+		color: #888780;
+	}
+	.etiqueta {
+		font-size: 0.72rem;
+		color: #fff;
+		background: #7B6EA0;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		font-weight: 500;
+		padding: 2px 8px;
+		border-radius: 20px;
+	}
+	.sep { color: #D8D6CE; }
+	hr {
+		border: none;
+		border-top: 1px solid #D8D6CE;
+		margin: 0;
+	}
+	.prose {
+		margin-top: 2rem;
+		max-width: 660px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #2C2C2A;
+	}
+	.prose p { margin-bottom: 1.5rem; }
+	.prose strong { font-weight: 600; color: #1a1a18; }
+	.prose em { font-style: italic; color: #5F5E5A; }
+	.prose h2 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.35rem;
+		margin: 2rem 0 0.75rem;
+		color: #2C2C2A;
+	}
+	.prose pre {
+		background: #F4F2EE;
+		border: 1px solid #D8D6CE;
+		border-radius: 8px;
+		padding: 1.25rem 1.5rem;
+		font-size: 0.9rem;
+		line-height: 1.7;
+		overflow-x: auto;
+		white-space: pre-wrap;
+		margin: 1.5rem 0;
+	}
+	.prose code {
+		font-family: 'Courier New', monospace;
+		font-size: 0.88rem;
+		background: #F4F2EE;
+		padding: 2px 5px;
+		border-radius: 3px;
+	}
+	.prose pre code {
+		background: none;
+		padding: 0;
+	}
+	.prose blockquote {
+		border-left: 3px solid #7B6EA0;
+		padding: 0.25rem 0 0.25rem 1.25rem;
+		margin: 1.5rem 0;
+		color: #5F5E5A;
+		font-style: italic;
+	}
+	.post-footer {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+	}
+	.post-footer a {
+		font-size: 0.9rem;
+		color: #7B6EA0;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.post-footer a:hover { color: #5a4f7a; }
+	@media (max-width: 720px) {
+		h1 { font-size: 1.75rem; }
+	}
+</style>
