@@ -13,12 +13,12 @@ const posts = (await getCollection('blog')).sort(
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`Noticias — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead title={`Píldoras — ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1 class="page-title">Noticias</h1>
+			<h1 class="page-title">Píldoras</h1>
 			<ul>
 				{posts.map((post) => (
 					<li>
