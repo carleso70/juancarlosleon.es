@@ -36,7 +36,25 @@ Esa es la parte que no está en el prompt.
 
 ## El resultado
 
-*Ejemplo con www.carleso.com — próximamente.*
+Esto es lo que produce aplicado a **www.carleso.com**, un blog personal de música, viajes y cultura:
+
+---
+
+**ESTADO ACTUAL**
+
+carleso.com es un blog personal con presencia orgánica muy incipiente. En los últimos 3 meses ha generado 4 clics y 497 impresiones, con un CTR del 0,8% y una posición media de 11,2. La web aparece en Google pero no consigue que el usuario entre: se ve, pero no se visita.
+
+La única página que genera tráfico real es `/jugadores-con-nombres-de-3-letras` (3 clics, 112 impresiones), lo que indica que el contenido más específico y con búsqueda activa tiene potencial. El resto de páginas con impresiones no convierten ningún clic.
+
+**DEFICIENCIAS**
+
+La página de pancismo acumula 150 impresiones y 0 clics — es la mayor oportunidad desaprovechada de la web. Las queries principales (`pancista`, `leslie harvey`, `paul kossoff`) muestran un nicho musical muy específico con demanda real, pero sin páginas optimizadas que conviertan esa visibilidad en visitas.
+
+**ASPECTOS A MEJORAR**
+
+Hay acciones inmediatas y cambios estructurales que podrían transformar el rendimiento de esta web en pocas semanas. Pero esa parte se trabaja caso a caso.
+
+---
 
 ---
 
