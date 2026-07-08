@@ -18,7 +18,7 @@ const posts = (await getCollection('blog')).sort(
 	<body>
 		<Header />
 		<main>
-			<h1 class="page-title">Píldoras</h1>
+			<h1 class="page-title"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M228.24,59.76a52,52,0,0,0-73.53,0L43.76,170.71a52,52,0,0,0,73.53,73.53L228.24,133.29A52.06,52.06,0,0,0,228.24,59.76ZM101.65,228.59a36,36,0,0,1-50.9-50.94l50.52-50.52,50.93,50.93Zm115-115-48.82,48.82L117,111.5l48.82-48.82a36,36,0,0,1,50.9,50.94Z"/></svg> Píldoras</h1>
 			<ul>
 				{posts.map((post) => (
 					<li>
@@ -42,6 +42,9 @@ const posts = (await getCollection('blog')).sort(
 
 <style>
 	.page-title {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
 		font-size: 1.75rem;
 		margin-bottom: 2.5rem;
 		padding-bottom: 1rem;
