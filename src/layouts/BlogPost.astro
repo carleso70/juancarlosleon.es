@@ -41,7 +41,7 @@ const schemaBlogPost = {
 		<main>
 			<article>
 				<header class="post-header">
-					<span class="label">Píldoras</span>
+					<span class="label"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M228.24,59.76a52,52,0,0,0-73.53,0L43.76,170.71a52,52,0,0,0,73.53,73.53L228.24,133.29A52.06,52.06,0,0,0,228.24,59.76ZM101.65,228.59a36,36,0,0,1-50.9-50.94l50.52-50.52,50.93,50.93Zm115-115-48.82,48.82L117,111.5l48.82-48.82a36,36,0,0,1,50.9,50.94Z"/></svg> Píldoras</span>
 					<h1>{title}</h1>
 					{description && <p class="description">{description}</p>}
 					<div class="meta">
@@ -71,6 +71,9 @@ const schemaBlogPost = {
 		margin-bottom: 0;
 	}
 	.label {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
 		font-size: 0.75rem;
 		color: #6B8F71;
 		text-transform: uppercase;
