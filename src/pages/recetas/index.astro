@@ -31,7 +31,6 @@ const recetas = (await getCollection('recetas')).sort(
 							{receta.data.description && (
 								<p class="post-desc">{receta.data.description}</p>
 							)}
-							<span class="read-more">Ver receta</span>
 						</a>
 					</li>
 				))}
