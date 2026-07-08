@@ -13,12 +13,12 @@ const herramientas = (await getCollection('herramientas')).sort(
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={`Herramientas — ${SITE_TITLE}`} description="Herramientas de IA imprescindibles, explicadas sin tecnicismos." />
+		<BaseHead title={`Botiquín — ${SITE_TITLE}`} description="Herramientas de IA imprescindibles, explicadas sin tecnicismos." />
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1 class="page-title">Herramientas</h1>
+			<h1 class="page-title">Botiquín</h1>
 			<p class="intro">IA aplicada al día a día. Sin tecnicismos, sin humo. Solo lo que merece la pena.</p>
 			<ul>
 				{herramientas.map((h) => (
