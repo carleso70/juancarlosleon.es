@@ -14,10 +14,22 @@ import HeaderLink from './HeaderLink.astro';
 			<span></span>
 		</button>
 		<div class="nav-links" id="nav-links">
-			<HeaderLink href="/blog">Píldoras</HeaderLink>
-			<HeaderLink href="/herramientas">Botiquín</HeaderLink>
-			<HeaderLink href="/contraindicaciones">Contraindicaciones</HeaderLink>
-			<HeaderLink href="/recetas">Recetas</HeaderLink>
+			<HeaderLink href="/blog">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M228.24,59.76a52,52,0,0,0-73.53,0L43.76,170.71a52,52,0,0,0,73.53,73.53L228.24,133.29A52.06,52.06,0,0,0,228.24,59.76ZM101.65,228.59a36,36,0,0,1-50.9-50.94l50.52-50.52,50.93,50.93Zm115-115-48.82,48.82L117,111.5l48.82-48.82a36,36,0,0,1,50.9,50.94Z"/></svg>
+				Píldoras
+			</HeaderLink>
+			<HeaderLink href="/herramientas">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216,72H184V64a24,24,0,0,0-24-24H96A24,24,0,0,0,72,64v8H40A16,16,0,0,0,24,88V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V88A16,16,0,0,0,216,72ZM88,64a8,8,0,0,1,8-8h64a8,8,0,0,1,8,8v8H88ZM216,200H40V88H216V200Zm-40-72a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"/></svg>
+				Botiquín
+			</HeaderLink>
+			<HeaderLink href="/contraindicaciones">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M236.8,188.09,149.35,36.22a24.76,24.76,0,0,0-42.7,0L19.2,188.09a23.51,23.51,0,0,0,0,23.72A24.35,24.35,0,0,0,40.55,224h174.9a24.35,24.35,0,0,0,21.33-12.19A23.51,23.51,0,0,0,236.8,188.09ZM120,104a8,8,0,0,1,16,0v40a8,8,0,0,1-16,0Zm8,88a12,12,0,1,1,12-12A12,12,0,0,1,128,192Z"/></svg>
+				Contraindicaciones
+			</HeaderLink>
+			<HeaderLink href="/recetas">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Zm-32-80a8,8,0,0,1-8,8H136v24a8,8,0,0,1-16,0V144H96a8,8,0,0,1,0-16h24V104a8,8,0,0,1,16,0v24h24A8,8,0,0,1,168,136Z"/></svg>
+				Recetas
+			</HeaderLink>
 			<HeaderLink href="/sobre-mi">Sobre mí</HeaderLink>
 			<HeaderLink href="/contacto">Contacto</HeaderLink>
 		</div>
@@ -109,6 +121,11 @@ import HeaderLink from './HeaderLink.astro';
 		display: flex;
 		gap: 2rem;
 		align-items: center;
+	}
+	.nav-links a {
+		display: flex;
+		align-items: center;
+		gap: 0.35rem;
 	}
 	@media (max-width: 640px) {
 		.hamburger {
