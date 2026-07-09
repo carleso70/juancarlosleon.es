@@ -9,11 +9,11 @@ url: "https://gamma.app"
 
 Hay cosas que todos odiamos hacer y nadie admite: rellenar formularios, contestar correos del lunes por la mañana y montar presentaciones desde cero. Para lo último, ya hay solución.
 
-Gamma es una herramienta de inteligencia artificial que convierte texto en presentaciones. No hace magia —la magia la pones tú con el contenido— pero sí hace el trabajo sucio: estructura, diseño, jerarquía visual, formato. Todo eso que en PowerPoint te come dos horas, aquí ocurre en treinta segundos.
+Gamma es una herramienta de inteligencia artificial que convierte texto en presentaciones. No hace magia —la magia la pones tú con el contenido— pero sí hace el trabajo sucio: estructura, diseño, jerarquía visual, formato. Todo eso que en PowerPoint te come (dos horas), aquí ocurre en treinta segundos.
 
 **Dos formas de usarla**
 
-La primera, para los muy valientes: le das solo una instrucción ("crea una presentación sobre marketing digital para pymes") y Gamma lo inventa todo. Funciona como punto de partida, pero el resultado depende mucho de lo vaga o precisa que sea la instrucción. Es el modo *a ver qué pasa*.
+La primera, para los muy valientes: le das solo una instrucción ("crea una presentación sobre marketing digital para pymes") y Gamma lo inventa todo. Funciona como punto de partida, pero el resultado depende mucho de lo vaga o precisa que sea la instrucción. Es el modo *a ver qué pasa*. Pero, yo que tú, no me conformaba con eso. Aspiramos a algo más.
 
 La segunda, y la que tiene más sentido: le das de comer. Pegas tu propio texto —un informe, unas notas, un briefing— eliges una plantilla de las que ofrece, y la herramienta lo transforma en slides. El contenido es tuyo, la presentación también, pero el tiempo invertido no tiene nada que ver.
 
