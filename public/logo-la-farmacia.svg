@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 14 275 72" role="img" aria-label="La FarmacIA de Juan Carlos León">
+	<rect x="22" y="22" width="16" height="44" rx="8" fill="#F3F1EC"/>
+	<rect x="22" y="44" width="16" height="22" rx="8" fill="#E0C98A"/>
+	<text x="52" y="45" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="700" fill="#FFFFFF">La Farmac<tspan fill="#E0C98A">IA</tspan></text>
+	<text x="52" y="65" font-family="'Inter', sans-serif" font-size="13" font-weight="400" letter-spacing="0.3" fill="#E8E4DC">de Juan Carlos León</text>
+</svg>
