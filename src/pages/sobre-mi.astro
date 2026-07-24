@@ -15,6 +15,7 @@ import logoBBVA from '../assets/clientes/Logo-BBVA.webp';
 import logoRIU from '../assets/clientes/RIU_Hotels_logo.svg';
 import logoAcesur from '../assets/clientes/acesur-logo.png';
 import logoBookingFax from '../assets/clientes/booking-fax.png';
+import fotoJuanCarlos from '../assets/juan-carlos-leon.jpg';
 
 const description = 'Programador, formador y consultor. También escritor y músico.';
 
@@ -43,10 +44,26 @@ const clientes = [
 	<body>
 		<Header />
 		<main>
+			<svg width="0" height="0" style="position: absolute;">
+				<filter id="duotono">
+					<feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 1 0" />
+					<feComponentTransfer color-interpolation-filters="sRGB">
+						<feFuncR type="table" tableValues="0.184 0.420 0.953" />
+						<feFuncG type="table" tableValues="0.239 0.561 0.945" />
+						<feFuncB type="table" tableValues="0.169 0.443 0.925" />
+					</feComponentTransfer>
+				</filter>
+			</svg>
 			<section class="page-header">
-				<span class="label">Sobre mí</span>
-				<h1>Juan Carlos León</h1>
-				<p class="description">{description}</p>
+				<img src={fotoJuanCarlos.src} alt="Juan Carlos León" class="foto" />
+				<div>
+					<span class="label">Sobre mí</span>
+					<h1>Juan Carlos León</h1>
+					<p class="description">
+						Programador, formador y consultor.<br />
+						<span class="tambien">También escritor y músico.</span>
+					</p>
+				</div>
 			</section>
 
 			<div class="prose">
@@ -75,6 +92,24 @@ const clientes = [
 <style>
 	.page-header {
 		padding: 2.5rem 0 0;
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
+	.foto {
+		width: 170px;
+		height: 170px;
+		border-radius: 50%;
+		object-fit: cover;
+		flex-shrink: 0;
+		filter: contrast(1.15) brightness(1.05) url(#duotono);
+	}
+	@media (max-width: 560px) {
+		.page-header {
+			flex-direction: column;
+			align-items: flex-start;
+			text-align: left;
+		}
 	}
 	.label {
 		font-size: 0.75rem;
@@ -98,12 +133,16 @@ const clientes = [
 		line-height: 1.6;
 		margin: 0 0 2rem;
 	}
+	.tambien {
+		font-size: 0.85rem;
+	}
 	.prose {
 		max-width: 660px;
 		font-size: 1.05rem;
 		line-height: 1.8;
 		color: #2C2C2A;
 		padding-bottom: 1rem;
+		margin-top: 2.75rem;
 	}
 	.clientes {
 		margin-top: 3rem;
