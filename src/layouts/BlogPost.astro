@@ -7,7 +7,7 @@ import ShareButtons from '../components/ShareButtons.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, description, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 const schemaBlogPost = {
 	'@context': 'https://schema.org',
@@ -33,7 +33,7 @@ const schemaBlogPost = {
 
 <html lang="es">
 	<head>
-		<BaseHead title={title} description={description} type="article" />
+		<BaseHead title={title} description={description} type="article" image={heroImage} />
 		<script type="application/ld+json" set:html={JSON.stringify(schemaBlogPost)} />
 	</head>
 	<body>

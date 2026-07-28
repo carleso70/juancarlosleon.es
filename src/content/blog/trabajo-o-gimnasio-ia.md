@@ -2,6 +2,7 @@
 title: "Trabajo o gimnasio: la pregunta que decide si usas la IA"
 description: "Bruce Schneier propone una regla sencilla para saber cuándo delegar en la IA y cuándo no: si lo que importa es el resultado, delega. Si lo que importa es el proceso, hazlo tú."
 pubDate: 2026-07-28
+heroImage: ../../assets/og-trabajo-gimnasio.png
 ---
 
 Bruce Schneier — un tipo que sabe de seguridad, no de autoayuda — enseña políticas públicas en Harvard y en la Universidad de Toronto. Y como todo profesor de estos años, se pasa el día leyendo trabajos escritos a medias por IA. En vez de quejarse sin más, ha escrito en The Guardian una regla que le roba al investigador Daniel Miessler y que vale la pena robar también: la diferencia entre el trabajo y el gimnasio.
