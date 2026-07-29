@@ -65,4 +65,6 @@ Aquí van las más habituales, en castellano y sin rodeos.
 
 ---
 
-*Banda sonora recomendada: [20th Century Boy — T. Rex](https://open.spotify.com/track/1y5LL9dpLXbCXNKKqw5wCJ)*
+*Banda sonora recomendada: 20th Century Boy — T. Rex*
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1y5LL9dpLXbCXNKKqw5wCJ" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
