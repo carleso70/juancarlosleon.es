@@ -44,6 +44,8 @@ Aquí van las más habituales, en castellano y sin rodeos.
 
 **iPaaS** — Integration Platform as a Service. Plataforma de integración como servicio. Herramientas que conectan aplicaciones y automatizan flujos entre ellas. n8n, Zapier o Make son iPaaS.
 
+**JSON** — JavaScript Object Notation. Formato ligero para intercambiar datos entre sistemas. No es un lenguaje de programación, sino una forma de estructurar información que las máquinas leen bien y los humanos pueden descifrar si se les da un momento. Cuando una API te devuelve datos, casi siempre llegan en JSON.
+
 ---
 
 ## Las del negocio
