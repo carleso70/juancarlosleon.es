@@ -1,0 +1,149 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('consulta');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<'consulta'>;
+
+const post = Astro.props;
+const { title, description, pubDate, updatedDate } = post.data;
+const { Content } = await render(post);
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<BaseHead title={title} description={description} type="article" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<header class="post-header">
+					<span class="label"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a16,16,0,1,1,16,16A16,16,0,0,1,112,84Z"/></svg> Consulta</span>
+					<h1>{title}</h1>
+					{description && <p class="description">{description}</p>}
+					<div class="meta">
+						<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+						{updatedDate && <span class="sep">·</span>}
+						{updatedDate && <span class="updated">Actualizado el {updatedDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</span>}
+					</div>
+					<hr />
+					<ShareButtons url={Astro.url.href} title={title} />
+					<hr />
+				</header>
+				<div class="prose">
+					<Content />
+				</div>
+				<footer class="post-footer">
+					<a href="/consulta">← Volver a Consulta</a>
+				</footer>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.post-header {
+		padding: 2.5rem 0 0;
+	}
+	.label {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.3rem;
+		font-size: 0.75rem;
+		color: #6B8F71;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: 500;
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+	h1 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 2.25rem;
+		line-height: 1.2;
+		margin: 0 0 0.75rem;
+		max-width: 680px;
+	}
+	.description {
+		font-size: 1.05rem;
+		color: #5F5E5A;
+		margin: 0 0 1.25rem;
+		max-width: 600px;
+	}
+	.meta {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin-bottom: 1.5rem;
+		font-size: 0.85rem;
+		color: #888780;
+	}
+	.meta time {
+		font-size: 0.8rem;
+		color: #888780;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.sep { color: #D8D6CE; }
+	.updated {
+		font-size: 0.85rem;
+		color: #888780;
+		font-style: italic;
+	}
+	hr {
+		border: none;
+		border-top: 1px solid #D8D6CE;
+		margin: 0;
+	}
+	.prose {
+		margin-top: 2rem;
+		max-width: 660px;
+		font-size: 1.05rem;
+		line-height: 1.8;
+		color: #2C2C2A;
+	}
+	.prose p { margin-bottom: 1.5rem; }
+	.prose strong { font-weight: 500; color: #1a1a18; }
+	.prose em { font-style: italic; color: #5F5E5A; }
+	.prose h2 {
+		font-family: 'Playfair Display', Georgia, serif;
+		font-size: 1.4rem;
+		margin: 2rem 0 0.75rem;
+		color: #2C2C2A;
+	}
+	.prose blockquote {
+		border-left: 3px solid #6B8F71;
+		padding: 0.25rem 0 0.25rem 1.25rem;
+		margin: 1.5rem 0;
+		color: #5F5E5A;
+		font-style: italic;
+	}
+	.post-footer {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
+	}
+	.post-footer a {
+		font-size: 0.9rem;
+		color: #6B8F71;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.post-footer a:hover { color: #4a6b50; }
+	@media (max-width: 720px) {
+		h1 { font-size: 1.75rem; }
+	}
+</style>
