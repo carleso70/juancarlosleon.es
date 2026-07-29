@@ -50,11 +50,12 @@ const recetas = defineCollection({
 
 const consulta = defineCollection({
 	loader: glob({ base: './src/content/consulta', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
+		heroImage: z.optional(image()),
 	}),
 });
 
