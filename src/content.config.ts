@@ -28,12 +28,13 @@ const herramientas = defineCollection({
 
 const contraindicaciones = defineCollection({
 	loader: glob({ base: './src/content/contraindicaciones', pattern: '**/*.{md,mdx}' }),
-	schema: z.object({
+	schema: ({ image }) => z.object({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		fuente: z.string(),
 		urlFuente: z.string().url(),
+		heroImage: z.optional(image()),
 	}),
 });
 

@@ -2,6 +2,7 @@
 title: "Lo que compartes con Claude puede acabar en Google (y no es la primera vez)"
 description: "Conversaciones de Claude con datos médicos y nombres de menores aparecieron indexadas en Google. El problema ya ocurrió en 2025. Anthropic sigue sin avisar a sus usuarios del riesgo."
 pubDate: 2026-07-29
+heroImage: ../../assets/og-contraindicaciones-claude-chats.png
 fuente: "AI Today / Rashmi Ramesh"
 urlFuente: "https://www.aitoday.io/claudes-shared-chats-surface-on-google-search-a-32348"
 ---
