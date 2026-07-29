@@ -2,6 +2,7 @@
 title: "El siglo de las siglas"
 description: "LLM, RAG, RPA, iPaaS... Las siglas se acumulan, nadie las explica, y da un poco de vergüenza preguntar. Aquí van las más habituales, en castellano y sin rodeos."
 pubDate: 2026-07-06
+heroImage: ../../assets/og-siglo-de-las-siglas.png
 ---
 
 Vivimos en un tiempo en que leer un artículo sobre tecnología o negocios se parece cada vez más a descifrar un código. LLM, RAG, RPA, iPaaS... Las siglas se acumulan, nadie las explica, y da un poco de vergüenza preguntar, lo que suele desembocar en un mal uso de la terminología, cosa que ruboriza aún más.
@@ -28,7 +29,7 @@ Aquí van las más habituales, en castellano y sin rodeos.
 
 **RLHF** — Reinforcement Learning from Human Feedback. Aprendizaje por refuerzo con feedback humano. El proceso por el que los modelos aprenden a comportarse mejor a partir de las correcciones de personas reales.
 
-**AGI** — Artificial General Intelligence. Inteligencia Artificial General. La IA hipotética que igualaría o superaría la inteligencia humana en cualquier tarea. Todavía no existe, aunque hay quien dice que está cerca.
+**AGI** — Artificial General Intelligence. Inteligencia Artificial General. La IA hipotética que igualaría o superaría la inteligencia humana en cualquier tarea. Todavía no existe, aunque hay quien dice que está cerca. Ante todo, mucha calma...
 
 **MCP** — Model Context Protocol. El estándar que permite a los modelos de IA conectarse con herramientas y servicios externos. Lo que hace posible que una IA consulte tu calendario, busque en internet o ejecute código.
 
@@ -61,3 +62,7 @@ Aquí van las más habituales, en castellano y sin rodeos.
 ---
 
 ¿Falta alguna? Seguro que sí — el siglo acaba de empezar.
+
+---
+
+*Banda sonora recomendada: [20th Century Boy — T. Rex](https://open.spotify.com/track/1y5LL9dpLXbCXNKKqw5wCJ)*
