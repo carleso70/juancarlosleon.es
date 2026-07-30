@@ -31,7 +31,7 @@ El modelo de Elon Musk, integrado en X (antes Twitter). Su principal baza es el 
 
 ## Kimi — Moonshot AI
 
-La sorpresa china del año. Desarrollado por Moonshot AI, Kimi ha llamado la atención por su capacidad para procesar documentos muy largos y por ofrecer un rendimiento sorprendente a un coste menor que sus competidores occidentales. Especialmente popular entre investigadores y usuarios que trabajan con textos extensos. Su influencia en el mercado global va en aumento.
+La sorpresa china del año. Desarrollado por Moonshot AI, Kimi ha llamado la atención por su capacidad para procesar documentos muy largos y por ofrecer un rendimiento sorprendente a un coste menor que sus competidores occidentales. Especialmente popular entre investigadores y usuarios que trabajan con textos extensos. Su influencia en el mercado global va en aumento, al igual que la de su nación madre.
 
 ---
 
