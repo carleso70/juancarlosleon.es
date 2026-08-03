@@ -1,7 +1,8 @@
 ---
 title: "¿Te va a quitar la IA el trabajo? Miremos a China"
-description: "Los robotaxis ya han recortado un 40% los ingresos de los taxistas en Wuhan. Un director de fotografía en Pekín se ha quedado sin trabajo por un programa informático. China nos enseña, en tiempo real, qué pinta tiene perder el empleo frente a la IA."
+description: "China nos enseña, en tiempo real, qué pinta tiene perder el empleo frente a la IA. Los robotaxis ya han recortado un 40% los ingresos de los taxistas en Wuhan. La industria cinematográfica también se ve amenazada por el auge de la IA."
 pubDate: 2026-08-03
+heroImage: ../../assets/og-ia-empleo-china.png
 fuente: "The Guardian"
 urlFuente: "https://www.theguardian.com/world/2026/jul/31/china-ai-jobs-workers-labour-market-technology"
 ---
