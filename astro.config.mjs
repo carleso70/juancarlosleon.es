@@ -3,12 +3,18 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://juancarlosleon.es',
 	devToolbar: { enabled: false },
 	integrations: [mdx(), sitemap()],
+	markdown: {
+		rehypePlugins: [
+			[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
+		],
+	},
 	fonts: [
 		{
 			provider: fontProviders.local(),

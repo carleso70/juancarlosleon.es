@@ -1,6 +1,6 @@
 ---
 title: "¿Cortesía o rendimiento?"
-description: "Un CEO dice que decirle \"por favor\" a la IA desperdicia energía. Puede que tenga razón en los números. Pero hay argumentos que van más allá de los vatios."
+description: "Estudios avalan que decirle \"por favor\" a la IA desperdicia energía. Puede que tengan razón en los números. Pero hay argumentos que van más allá de los vatios."
 pubDate: 2026-08-05
 heroImage: ../../assets/og-cortesia-rendimiento.png
 ---
