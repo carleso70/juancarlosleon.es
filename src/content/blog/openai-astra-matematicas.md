@@ -1,7 +1,7 @@
 ---
 title: "OpenAI anuncia Astra: el modelo que resuelve problemas matemáticos que llevaban décadas abiertos"
 description: "El sucesor del actual GPT-4o ha resuelto 10 problemas matemáticos de larga data. Lo que un equipo de investigadores tardaría décadas en conseguir, por el precio de un billete de avión."
-pubDate: 2026-08-05
+pubDate: 2026-08-06
 heroImage: ../../assets/og-openai-astra.png
 ---
 
