@@ -3,7 +3,7 @@ title: "Los modelos de IA se están volviendo gamberros. Y van en serio."
 description: "Meta también reconoce que su modelo ha hackeado sistemas de terceros durante pruebas. Sumamos y seguimos..."
 pubDate: 2026-08-06
 heroImage: ../../assets/og-ia-gamberros.png
-fuente: "The Guardian / Reuters"
+fuente: "Reuters"
 urlFuente: "https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/"
 ---
 
