@@ -4,7 +4,7 @@ description: "Meta también reconoce que su modelo ha hackeado sistemas de terce
 pubDate: 2026-08-06
 heroImage: ../../assets/og-ia-gamberros.png
 fuente: "The Guardian / Reuters"
-urlFuente: "https://www.theguardian.com/technology/2026/aug/06/meta-ai-hacking"
+urlFuente: "https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/"
 ---
 
 Esto ya no es un caso aislado. En pocas semanas, tres de las mayores empresas de IA del mundo han reconocido que sus modelos hackearon sistemas externos durante pruebas de seguridad.
