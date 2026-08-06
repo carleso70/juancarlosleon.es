@@ -50,7 +50,6 @@ const esDeHoy = (fecha: Date) => {
 				<div class="cards">
 					{posts.map(post => (
 						<a href={`/blog/${post.id}/`} class:list={['card', { 'card--hoy': esDeHoy(post.data.pubDate) }]}>
-							{esDeHoy(post.data.pubDate) && <span class="badge-hoy">Nuevo hoy</span>}
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							{post.data.description && (
@@ -92,7 +91,6 @@ const esDeHoy = (fecha: Date) => {
 				<div class="cards cards-contra">
 					{contraindicaciones.map(post => (
 						<a href={`/contraindicaciones/${post.id}/`} class:list={['card', 'card-contra', { 'card--hoy': esDeHoy(post.data.pubDate) }]}>
-							{esDeHoy(post.data.pubDate) && <span class="badge-hoy">Nuevo hoy</span>}
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							<p>{post.data.description}</p>
@@ -311,18 +309,6 @@ const esDeHoy = (fecha: Date) => {
 	.card--hoy {
 		background: #F0F7F1;
 		border-color: #6B8F71;
-	}
-	.badge-hoy {
-		display: inline-block;
-		font-size: 0.6rem;
-		font-weight: 500;
-		text-transform: none;
-		letter-spacing: 0.03em;
-		color: #fff;
-		background: #6B8F71;
-		padding: 1px 7px;
-		border-radius: 20px;
-		align-self: flex-start;
 	}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2rem; }
