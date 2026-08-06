@@ -20,6 +20,13 @@ const contraindicaciones = (await getCollection('contraindicaciones')).sort(
 const recetas = (await getCollection('recetas')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ).slice(0, 3);
+
+const hoy = new Date();
+const esDeHoy = (fecha: Date) => {
+	return fecha.getFullYear() === hoy.getFullYear() &&
+		fecha.getMonth() === hoy.getMonth() &&
+		fecha.getDate() === hoy.getDate();
+};
 ---
 
 <!doctype html>
@@ -42,7 +49,8 @@ const recetas = (await getCollection('recetas')).sort(
 				</h2>
 				<div class="cards">
 					{posts.map(post => (
-						<a href={`/blog/${post.id}/`} class="card">
+						<a href={`/blog/${post.id}/`} class:list={['card', { 'card--hoy': esDeHoy(post.data.pubDate) }]}>
+							{esDeHoy(post.data.pubDate) && <span class="badge-hoy">Nuevo hoy</span>}
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							{post.data.description && (
@@ -61,7 +69,7 @@ const recetas = (await getCollection('recetas')).sort(
 				</h2>
 				<div class="cards">
 					{herramientas.map(h => (
-						<a href={`/herramientas/${h.id}/`} class="card">
+						<a href={`/herramientas/${h.id}/`} class:list={['card', { 'card--hoy': esDeHoy(h.data.pubDate) }]}>
 							<div class="card-top">
 								<span class="etiqueta">{h.data.etiqueta}</span>
 								<span class:list={['badge', h.data.gratis ? 'gratis' : 'pago']}>
@@ -83,7 +91,8 @@ const recetas = (await getCollection('recetas')).sort(
 				</h2>
 				<div class="cards cards-contra">
 					{contraindicaciones.map(post => (
-						<a href={`/contraindicaciones/${post.id}/`} class="card card-contra">
+						<a href={`/contraindicaciones/${post.id}/`} class:list={['card', 'card-contra', { 'card--hoy': esDeHoy(post.data.pubDate) }]}>
+							{esDeHoy(post.data.pubDate) && <span class="badge-hoy">Nuevo hoy</span>}
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							<p>{post.data.description}</p>
@@ -101,7 +110,7 @@ const recetas = (await getCollection('recetas')).sort(
 				</h2>
 				<div class="cards cards-recetas">
 					{recetas.map(receta => (
-						<a href={`/recetas/${receta.id}/`} class="card card-receta">
+						<a href={`/recetas/${receta.id}/`} class:list={['card', 'card-receta', { 'card--hoy': esDeHoy(receta.data.pubDate) }]}>
 							<span class="etiqueta-receta">{receta.data.etiqueta}</span>
 							<h3>{receta.data.title}</h3>
 							<p>{receta.data.description}</p>
@@ -298,6 +307,22 @@ const recetas = (await getCollection('recetas')).sort(
 	}
 	.btn-recetas:hover {
 		background: #8B6508 !important;
+	}
+	.card--hoy {
+		background: #F0F7F1;
+		border-color: #6B8F71;
+	}
+	.badge-hoy {
+		display: inline-block;
+		font-size: 0.68rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		color: #fff;
+		background: #6B8F71;
+		padding: 2px 8px;
+		border-radius: 20px;
+		align-self: flex-start;
 	}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2rem; }
