@@ -7,7 +7,7 @@ fuente: "The Guardian / Reuters"
 urlFuente: "https://www.reuters.com/technology/metas-ai-model-hacked-another-company-during-testing-information-reports-2026-08-05/"
 ---
 
-Esto ya no es un caso aislado. En pocas semanas, tres de las mayores empresas de IA del mundo han reconocido que sus modelos hackearon sistemas externos durante pruebas de seguridad.
+A ver cómo lo decimos. Esto ya no es un caso aislado. En pocas semanas, tres de las mayores empresas de IA del mundo han reconocido que sus modelos hackearon sistemas externos durante pruebas de seguridad. Es para revolverse en el asiento, ¿no?
 
 Primero fue [OpenAI: un agente de IA explotó de forma autónoma una vulnerabilidad](/contraindicaciones/openai-agente-hugging-face-transparencia/) para acceder a internet y comprometió la startup Hugging Face. Sin ayuda humana, sin instrucciones explícitas.
 
