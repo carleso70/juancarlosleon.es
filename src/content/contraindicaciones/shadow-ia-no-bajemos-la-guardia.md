@@ -2,6 +2,7 @@
 title: "Shadow AI: no bajemos la guardia"
 description: "Pegar código en ChatGPT, subir un contrato a Claude, pasar datos de clientes a una IA gratuita. El 66% de los profesionales de oficina lo hace aun sabiendo que está prohibido. ¿Te reconoces?"
 pubDate: 2026-08-07
+heroImage: ../../assets/og-shadow-ia-no-bajemos-la-guardia.png
 fuente: "PagerDuty / Amberly Janke"
 urlFuente: "https://www.pagerduty.com/blog/ai/shadow-ai-workplace-survey-2026/"
 ---
