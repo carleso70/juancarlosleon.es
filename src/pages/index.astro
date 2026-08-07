@@ -49,7 +49,7 @@ const esDeHoy = (fecha: Date) => {
 				</h2>
 				<div class="cards">
 					{posts.map(post => (
-						<a href={`/blog/${post.id}/`} class:list={['card', { 'card--hoy': esDeHoy(post.data.pubDate) }]}>
+						<a href={`/blog/${post.id}/`} class:list={['card', { 'card--hoy': esDeHoy(post.data.pubDate) }]} data-pubdate={post.data.pubDate.toISOString()}>
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							{post.data.description && (
@@ -68,7 +68,7 @@ const esDeHoy = (fecha: Date) => {
 				</h2>
 				<div class="cards">
 					{herramientas.map(h => (
-						<a href={`/herramientas/${h.id}/`} class:list={['card', { 'card--hoy': esDeHoy(h.data.pubDate) }]}>
+						<a href={`/herramientas/${h.id}/`} class:list={['card', { 'card--hoy': esDeHoy(h.data.pubDate) }]} data-pubdate={h.data.pubDate.toISOString()}>
 							<div class="card-top">
 								<span class="etiqueta">{h.data.etiqueta}</span>
 								<span class:list={['badge', h.data.gratis ? 'gratis' : 'pago']}>
@@ -90,7 +90,7 @@ const esDeHoy = (fecha: Date) => {
 				</h2>
 				<div class="cards cards-contra">
 					{contraindicaciones.map(post => (
-						<a href={`/contraindicaciones/${post.id}/`} class:list={['card', 'card-contra', { 'card--hoy': esDeHoy(post.data.pubDate) }]}>
+						<a href={`/contraindicaciones/${post.id}/`} class:list={['card', 'card-contra', { 'card--hoy': esDeHoy(post.data.pubDate) }]} data-pubdate={post.data.pubDate.toISOString()}>
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							<p>{post.data.description}</p>
@@ -108,7 +108,7 @@ const esDeHoy = (fecha: Date) => {
 				</h2>
 				<div class="cards cards-recetas">
 					{recetas.map(receta => (
-						<a href={`/recetas/${receta.id}/`} class:list={['card', 'card-receta', { 'card--hoy': esDeHoy(receta.data.pubDate) }]}>
+						<a href={`/recetas/${receta.id}/`} class:list={['card', 'card-receta', { 'card--hoy': esDeHoy(receta.data.pubDate) }]} data-pubdate={receta.data.pubDate.toISOString()}>
 							<span class="etiqueta-receta">{receta.data.etiqueta}</span>
 							<h3>{receta.data.title}</h3>
 							<p>{receta.data.description}</p>
@@ -121,6 +121,20 @@ const esDeHoy = (fecha: Date) => {
 		<Footer />
 	</body>
 </html>
+
+<script>
+	function fechaMadrid(fecha) {
+		return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Madrid' }).format(fecha);
+	}
+	function marcarPostsDeHoy() {
+		const hoyMadrid = fechaMadrid(new Date());
+		document.querySelectorAll('.card[data-pubdate]').forEach((card) => {
+			const fecha = new Date(card.dataset.pubdate);
+			card.classList.toggle('card--hoy', fechaMadrid(fecha) === hoyMadrid);
+		});
+	}
+	marcarPostsDeHoy();
+</script>
 
 <style>
 	.hero {
