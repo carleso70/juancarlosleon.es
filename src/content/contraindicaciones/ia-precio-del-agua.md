@@ -21,6 +21,8 @@ La escala. Entrenar un modelo de lenguaje grande como GPT-4 requiere miles de ch
 
 La IEA proyecta que los centros de datos podrían consumir el doble de electricidad en 2026 respecto a 2022. Goldman Sachs estima que una búsqueda con IA consume diez veces más energía que una búsqueda tradicional en Google.
 
+Por no hablar del efecto "isla de calor": los centros de datos pueden elevar las temperaturas en sus inmediaciones en un promedio entre 2 °C y 9 °C. Vamos, me ponen un centro de datos de IA en Bormujos y me hunden la miseria.
+
 **La paradoja incómoda**
 
 Las mismas empresas que prometen usar la IA para combatir el cambio climático han tenido que revisar a la baja sus objetivos de sostenibilidad precisamente por el impacto de sus modelos. Google y Microsoft reportaron aumentos significativos en emisiones y consumo de agua justo en los años del boom.
