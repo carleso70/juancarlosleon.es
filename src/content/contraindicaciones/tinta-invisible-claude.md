@@ -17,7 +17,9 @@ La marca existe en tu texto, si eres lo suficientemente vago. No puedes verla, n
 
 No es tan sencillo como en una imagen, pero se puede generar mediante esteganografía (el arte de ocultar un mensaje secreto dentro de otro archivo u objeto común), variaciones de puntuación y espaciados — de modo sutil — o distribuyendo palabras raras vs comunes siguiendo un patrón detectable.
 
-**¿Para quién está pensada entonces?** Para el estudiante que copia y pega sin tocar nada. Para el periodista que entrega el resumen de Claude sin editarlo. Para el vago, en definitiva. Quien edita, reescribe o simplemente parafrasea, queda fuera del radar.
+**¿Para quién está pensada entonces?**
+
+Para el estudiante que copia y pega sin tocar nada. Para el periodista que entrega el resumen de Claude sin editarlo. Para el vago, en definitiva. Quien edita, reescribe o simplemente parafrasea, queda fuera del radar.
 
 La conclusión incómoda es doble: la marca de agua no frena el uso deshonesto sofisticado, y cede a Anthropic — y a quien ella autorice — el poder de decidir quién está usando IA y quién no. De todos modos, creo que es un primer paso necesario para que en un futuro cercano se desenmascare fácilmente a los tramposos. Y mira que yo hago uso de IA, pero reviso los textos, los edito, los reformulo.
 
