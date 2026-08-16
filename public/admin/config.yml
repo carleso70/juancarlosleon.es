@@ -1,0 +1,85 @@
+backend:
+  name: github
+  repo: carleso70/juancarlosleon.es
+  branch: main
+  base_url: https://sveltia-cms-auth.carleso70.workers.dev
+
+site_url: https://juancarlosleon.es
+display_url: https://juancarlosleon.es
+logo_url: /favicon.svg
+
+media_folder: src/assets
+public_folder: /src/assets
+
+collections:
+  - name: blog
+    label: "Píldoras"
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../assets"
+    public_folder: "../../assets"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Descripción, name: description, widget: text }
+      - { label: "Fecha de publicación", name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: "Fecha de actualización", name: updatedDate, widget: date, format: "YYYY-MM-DD", required: false }
+      - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
+      - { label: Cuerpo, name: body, widget: markdown }
+
+  - name: herramientas
+    label: "Botiquín"
+    folder: src/content/herramientas
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Descripción, name: description, widget: text }
+      - { label: Fecha, name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: URL, name: url, widget: string }
+      - { label: "¿Es gratis?", name: gratis, widget: boolean, default: true }
+      - { label: Etiqueta, name: etiqueta, widget: string }
+      - { label: Cuerpo, name: body, widget: markdown }
+
+  - name: contraindicaciones
+    label: "Contraindicaciones"
+    folder: src/content/contraindicaciones
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../assets"
+    public_folder: "../../assets"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Descripción, name: description, widget: text }
+      - { label: Fecha, name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: Fuente, name: fuente, widget: string }
+      - { label: "URL de la fuente", name: urlFuente, widget: string }
+      - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
+      - { label: Cuerpo, name: body, widget: markdown }
+
+  - name: recetas
+    label: "Recetas"
+    folder: src/content/recetas
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Descripción, name: description, widget: text }
+      - { label: Fecha, name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: Etiqueta, name: etiqueta, widget: string }
+      - { label: Cuerpo, name: body, widget: markdown }
+
+  - name: consulta
+    label: "Consulta"
+    folder: src/content/consulta
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../assets"
+    public_folder: "../../assets"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Descripción, name: description, widget: text }
+      - { label: "Fecha de publicación", name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: "Fecha de actualización", name: updatedDate, widget: date, format: "YYYY-MM-DD", required: false }
+      - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
+      - { label: Cuerpo, name: body, widget: markdown }
