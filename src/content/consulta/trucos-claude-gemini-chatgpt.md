@@ -13,7 +13,10 @@ Con eso ya tienes gancho para la sobremesa. Ahora, algo más por asistente.
 
 **Pídele arte en ASCII.** "Dibújame un gato en ASCII art" y verás cómo construye la imagen carácter a carácter, en directo. Cuanto más raro el encargo, más se luce.
 
-**Pídele una app en vez de una respuesta.** Si en lugar de "explícame el interés compuesto" le pides "hazme una calculadora interactiva de interés compuesto", Claude no te da un texto: te construye una mini aplicación funcional, en un panel aparte, que puedes usar ahí mismo (los llamados *Artifacts*).
+**Pídele una app en vez de una respuesta.** Si en lugar de una explicación le pides algo interactivo, Claude no te da un texto: te construye una mini aplicación funcional, en un panel aparte, que puedes usar ahí mismo (los llamados *Artifacts*). Un par de ejemplos para probar tal cual:
+
+- "Hazme una calculadora interactiva de interés compuesto"
+- "Hazme una ruleta para decidir quién lleva la reunión de hoy" — le pasas un par de nombres y gira de verdad hasta pararse en uno al azar
 
 **Output Styles.** Menos vistoso, más útil: puedes guardar un estilo de escritura concreto (el tono con el que rediactas informes, por ejemplo) y aplicarlo cada vez sin tener que reexplicarlo. Está en el menú de configuración y casi nadie lo toca.
 
