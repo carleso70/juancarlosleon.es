@@ -17,13 +17,14 @@ type Props = CollectionEntry<'contraindicaciones'>;
 
 const post = Astro.props;
 const { title, description, pubDate, fuente, urlFuente, heroImage } = post.data;
+const ogImage = heroImage || `/og/contraindicaciones/${post.id}.png`;
 const { Content } = await render(post);
 ---
 
 <!doctype html>
 <html lang="es">
 	<head>
-		<BaseHead title={title} description={description} type="article" image={heroImage} />
+		<BaseHead title={title} description={description} type="article" image={ogImage} />
 	</head>
 	<body>
 		<Header />

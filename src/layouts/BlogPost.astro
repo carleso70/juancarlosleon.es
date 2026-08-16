@@ -5,9 +5,10 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & { id: string };
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, id } = Astro.props;
+const ogImage = heroImage || `/og/blog/${id}.png`;
 
 const schemaBlogPost = {
 	'@context': 'https://schema.org',
@@ -33,7 +34,7 @@ const schemaBlogPost = {
 
 <html lang="es">
 	<head>
-		<BaseHead title={title} description={description} type="article" image={heroImage} />
+		<BaseHead title={title} description={description} type="article" image={ogImage} />
 		<script type="application/ld+json" set:html={JSON.stringify(schemaBlogPost)} />
 	</head>
 	<body>
