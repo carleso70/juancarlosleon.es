@@ -27,6 +27,11 @@ collections:
       - { label: "Fecha de actualización", name: updatedDate, widget: datetime, type: date, format: "YYYY-MM-DD", required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
       - { label: Cuerpo, name: body, widget: markdown }
+    sortable_fields:
+      fields: [pubDate, title]
+      default:
+        field: pubDate
+        direction: descending
 
   - name: herramientas
     label: "Botiquín"
@@ -42,6 +47,11 @@ collections:
       - { label: "¿Es gratis?", name: gratis, widget: boolean, default: true }
       - { label: Etiqueta, name: etiqueta, widget: string }
       - { label: Cuerpo, name: body, widget: markdown }
+    sortable_fields:
+      fields: [pubDate, title]
+      default:
+        field: pubDate
+        direction: descending
 
   - name: contraindicaciones
     label: "Contraindicaciones"
@@ -59,6 +69,11 @@ collections:
       - { label: "URL de la fuente", name: urlFuente, widget: string }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
       - { label: Cuerpo, name: body, widget: markdown }
+    sortable_fields:
+      fields: [pubDate, title]
+      default:
+        field: pubDate
+        direction: descending
 
   - name: recetas
     label: "Recetas"
@@ -72,6 +87,11 @@ collections:
       - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: Etiqueta, name: etiqueta, widget: string }
       - { label: Cuerpo, name: body, widget: markdown }
+    sortable_fields:
+      fields: [pubDate, title]
+      default:
+        field: pubDate
+        direction: descending
 
   - name: consulta
     label: "Consulta"
@@ -88,3 +108,8 @@ collections:
       - { label: "Fecha de actualización", name: updatedDate, widget: datetime, type: date, format: "YYYY-MM-DD", required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
       - { label: Cuerpo, name: body, widget: markdown }
+    sortable_fields:
+      fields: [pubDate, title]
+      default:
+        field: pubDate
+        direction: descending
