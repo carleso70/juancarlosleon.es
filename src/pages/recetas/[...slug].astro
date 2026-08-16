@@ -6,7 +6,7 @@ import Footer from '../../components/Footer.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
 
 export async function getStaticPaths() {
-	const recetas = await getCollection('recetas');
+	const recetas = await getCollection('recetas', ({ data }) => !data.draft);
 	return recetas.map((receta) => ({
 		params: { slug: receta.id },
 		props: receta,

@@ -11,6 +11,7 @@ const blog = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: z.optional(image()),
+			draft: z.boolean().default(false),
 		}),
 });
 
@@ -23,6 +24,7 @@ const herramientas = defineCollection({
 		url: z.string().url(),
 		gratis: z.boolean(),
 		etiqueta: z.string(),
+		draft: z.boolean().default(false),
 	}),
 });
 
@@ -35,6 +37,7 @@ const contraindicaciones = defineCollection({
 		fuente: z.string(),
 		urlFuente: z.string().url(),
 		heroImage: z.optional(image()),
+		draft: z.boolean().default(false),
 	}),
 });
 
@@ -45,6 +48,7 @@ const recetas = defineCollection({
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		etiqueta: z.string(),
+		draft: z.boolean().default(false),
 	}),
 });
 
@@ -56,6 +60,7 @@ const consulta = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.optional(image()),
+		draft: z.boolean().default(false),
 	}),
 });
 

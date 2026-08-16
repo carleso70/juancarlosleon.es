@@ -6,7 +6,7 @@ import Footer from '../../components/Footer.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
 
 export async function getStaticPaths() {
-	const herramientas = await getCollection('herramientas');
+	const herramientas = await getCollection('herramientas', ({ data }) => !data.draft);
 	return herramientas.map((h) => ({
 		params: { slug: h.id },
 		props: h,
