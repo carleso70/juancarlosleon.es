@@ -22,8 +22,8 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: Descripción, name: description, widget: text }
-      - { label: "Fecha de publicación", name: pubDate, widget: date, format: "YYYY-MM-DD" }
-      - { label: "Fecha de actualización", name: updatedDate, widget: date, format: "YYYY-MM-DD", required: false }
+      - { label: "Fecha de publicación", name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
+      - { label: "Fecha de actualización", name: updatedDate, widget: datetime, type: date, format: "YYYY-MM-DD", required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
       - { label: Cuerpo, name: body, widget: markdown }
 
@@ -35,7 +35,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: Descripción, name: description, widget: text }
-      - { label: Fecha, name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: URL, name: url, widget: string }
       - { label: "¿Es gratis?", name: gratis, widget: boolean, default: true }
       - { label: Etiqueta, name: etiqueta, widget: string }
@@ -51,7 +51,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: Descripción, name: description, widget: text }
-      - { label: Fecha, name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: Fuente, name: fuente, widget: string }
       - { label: "URL de la fuente", name: urlFuente, widget: string }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
@@ -65,7 +65,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: Descripción, name: description, widget: text }
-      - { label: Fecha, name: pubDate, widget: date, format: "YYYY-MM-DD" }
+      - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: Etiqueta, name: etiqueta, widget: string }
       - { label: Cuerpo, name: body, widget: markdown }
 
@@ -79,7 +79,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: Descripción, name: description, widget: text }
-      - { label: "Fecha de publicación", name: pubDate, widget: date, format: "YYYY-MM-DD" }
-      - { label: "Fecha de actualización", name: updatedDate, widget: date, format: "YYYY-MM-DD", required: false }
+      - { label: "Fecha de publicación", name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
+      - { label: "Fecha de actualización", name: updatedDate, widget: datetime, type: date, format: "YYYY-MM-DD", required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false }
       - { label: Cuerpo, name: body, widget: markdown }
