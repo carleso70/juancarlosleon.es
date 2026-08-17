@@ -17,6 +17,7 @@ collections:
     folder: src/content/blog
     create: true
     slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
     media_folder: "../../assets"
     public_folder: "../../assets"
     fields:
@@ -38,6 +39,7 @@ collections:
     folder: src/content/herramientas
     create: true
     slug: "{{slug}}"
+    preview_path: "herramientas/{{slug}}"
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
@@ -58,6 +60,7 @@ collections:
     folder: src/content/contraindicaciones
     create: true
     slug: "{{slug}}"
+    preview_path: "contraindicaciones/{{slug}}"
     media_folder: "../../assets"
     public_folder: "../../assets"
     fields:
@@ -80,6 +83,7 @@ collections:
     folder: src/content/recetas
     create: true
     slug: "{{slug}}"
+    preview_path: "recetas/{{slug}}"
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
@@ -98,6 +102,7 @@ collections:
     folder: src/content/consulta
     create: true
     slug: "{{slug}}"
+    preview_path: "consulta/{{slug}}"
     media_folder: "../../assets"
     public_folder: "../../assets"
     fields:
