@@ -10,7 +10,7 @@ const blog = defineCollection({
 			description: z.string(),
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
-			heroImage: z.optional(image()),
+			heroImage: z.union([image(), z.string()]).optional(),
 			draft: z.boolean().default(false),
 		}),
 });
@@ -36,7 +36,7 @@ const contraindicaciones = defineCollection({
 		pubDate: z.coerce.date(),
 		fuente: z.string(),
 		urlFuente: z.string().url(),
-		heroImage: z.optional(image()),
+		heroImage: z.union([image(), z.string()]).optional(),
 		draft: z.boolean().default(false),
 	}),
 });
@@ -59,7 +59,7 @@ const consulta = defineCollection({
 		description: z.string(),
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
-		heroImage: z.optional(image()),
+		heroImage: z.union([image(), z.string()]).optional(),
 		draft: z.boolean().default(false),
 	}),
 });
