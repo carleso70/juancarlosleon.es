@@ -23,7 +23,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
-      - { label: Descripción, name: description, widget: text }
+      - { label: Descripción, name: description, widget: text, maxlength: 160 }
       - { label: "Fecha de publicación", name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: "Fecha de actualización", name: updatedDate, widget: datetime, type: date, format: "YYYY-MM-DD", required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false, hint: "Déjalo vacío para generar la imagen automáticamente con el diseño de marca." }
@@ -43,7 +43,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
-      - { label: Descripción, name: description, widget: text }
+      - { label: Descripción, name: description, widget: text, maxlength: 160 }
       - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: URL, name: url, widget: string }
       - { label: "¿Es gratis?", name: gratis, widget: boolean, default: true }
@@ -66,7 +66,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
-      - { label: Descripción, name: description, widget: text }
+      - { label: Descripción, name: description, widget: text, maxlength: 160 }
       - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: Fuente, name: fuente, widget: string, required: false }
       - { label: "URL de la fuente", name: urlFuente, widget: string, required: false }
@@ -87,7 +87,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
-      - { label: Descripción, name: description, widget: text }
+      - { label: Descripción, name: description, widget: text, maxlength: 160 }
       - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: Etiqueta, name: etiqueta, widget: string }
       - { label: Cuerpo, name: body, widget: markdown }
@@ -108,7 +108,7 @@ collections:
     fields:
       - { label: Título, name: title, widget: string }
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
-      - { label: Descripción, name: description, widget: text }
+      - { label: Descripción, name: description, widget: text, maxlength: 160 }
       - { label: "Fecha de publicación", name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
       - { label: "Fecha de actualización", name: updatedDate, widget: datetime, type: date, format: "YYYY-MM-DD", required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false, hint: "Déjalo vacío para generar la imagen automáticamente con el diseño de marca." }
