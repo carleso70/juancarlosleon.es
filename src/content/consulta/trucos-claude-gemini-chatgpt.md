@@ -30,7 +30,7 @@ Con eso ya tienes gancho para la sobremesa. Ahora, algo más por asistente.
 
 ## Gemini
 
-**Pega una lista y dale a "convertir en tabla".** Si le pegas un texto suelto, un JSON o cualquier lista de datos, Gemini te ofrece transformarlo en tabla con un clic — se ahorra un viaje entero a Excel y casi nadie sabe que ese botón existe.
+**Escribe `@` y el nombre de una app de Google.** Si tienes Gemini conectado a tu cuenta, puedes escribir `@Gmail`, `@Drive`, `@Calendar` o `@Tasks` dentro del propio mensaje para que busque directamente ahí. Por ejemplo: "Resume mis últimos correos de @Gmail sobre el proyecto X". No hace falta repetirlo en las siguientes preguntas de la misma conversación.
 
 **Gems.** Son versiones de Gemini configuradas por ti para una tarea fija (responder correos con tu tono, resumir reuniones siempre igual). Se montan una vez, en el menú lateral, y quedan ahí listas para reutilizar.
 

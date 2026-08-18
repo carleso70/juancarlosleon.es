@@ -27,7 +27,7 @@ const posts = (await getCollection('contraindicaciones', ({ data }) => !data.dra
 						<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 						<h2>{post.data.title}</h2>
 						<p>{post.data.description}</p>
-						<span class="fuente">{post.data.fuente}</span>
+						{post.data.fuente && <span class="fuente">{post.data.fuente}</span>}
 					</a>
 				))}
 			</section>

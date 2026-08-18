@@ -68,8 +68,8 @@ collections:
       - { label: "Borrador (oculto en la web)", name: draft, widget: boolean, default: false }
       - { label: Descripción, name: description, widget: text }
       - { label: Fecha, name: pubDate, widget: datetime, type: date, format: "YYYY-MM-DD" }
-      - { label: Fuente, name: fuente, widget: string }
-      - { label: "URL de la fuente", name: urlFuente, widget: string }
+      - { label: Fuente, name: fuente, widget: string, required: false }
+      - { label: "URL de la fuente", name: urlFuente, widget: string, required: false }
       - { label: "Imagen destacada (og-image)", name: heroImage, widget: image, required: false, hint: "Déjalo vacío para generar la imagen automáticamente con el diseño de marca." }
       - { label: Cuerpo, name: body, widget: markdown }
     sortable_fields:

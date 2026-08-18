@@ -94,7 +94,7 @@ const esDeHoy = (fecha: Date) => {
 							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
 							<h3>{post.data.title}</h3>
 							<p>{post.data.description}</p>
-							<span class="fuente-tag">{post.data.fuente}</span>
+							{post.data.fuente && <span class="fuente-tag">{post.data.fuente}</span>}
 						</a>
 					))}
 				</div>

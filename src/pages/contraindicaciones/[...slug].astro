@@ -36,8 +36,12 @@ const { Content } = await render(post);
 					<p class="description">{description}</p>
 					<div class="meta">
 						<time>{pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-						<span class="sep">·</span>
-						<a href={urlFuente} target="_blank" rel="noopener noreferrer" class="fuente">{fuente} →</a>
+						{fuente && urlFuente && (
+							<>
+								<span class="sep">·</span>
+								<a href={urlFuente} target="_blank" rel="noopener noreferrer" class="fuente">{fuente} →</a>
+							</>
+						)}
 					</div>
 					<hr />
 					<ShareButtons url={Astro.url.href} title={title} />
