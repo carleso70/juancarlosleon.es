@@ -3,8 +3,6 @@ title: AI-horning, chatflattery, botiquette... El vocabulario que nos hacía fal
 draft: true
 description: Un puñado de palabras nuevas acuñadas para nombrar las pequeñas torturas de la IA cotidiana — esas que hasta ahora solo podíamos describir con un suspiro de resignación (mientras nos levantamos las gafas y nos presionamos los ojos).
 pubDate: 2026-08-18
-updatedDate: ''
-heroImage: ''
 ---
 
 El escritor Stuart Heritage, más aburrido que yo de aquí a Lima, acaba de acuñar en _The Guardian_ un puñado de palabras para nombrar las pequeñas torturas tecnológicas de 2026. Parte de un término ya viral, "dickover" (acuñado por John Gruber, otro del club, en mayo de 2026): esa cortina o ventana modal que un sitio te pone delante, deliberadamente, para taparte el contenido que en realidad querías ver. Cookies, notificaciones, "inicia sesión con Google"... Dickover.
