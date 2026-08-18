@@ -13,7 +13,7 @@ De ahí nacen unos cuantos más, y estos sí que van directos a la IA. Los dejam
 
 **Chatflattery** — el hábito de los chatbots (y yo diría también de nuestros queridos Claude, ChatGPT, Gemini...) de darte la razón en casi todo. No es simpatía, es modelo de negocio: la retención se consigue haciendo sentir especial al usuario, y eso a veces sale muy mal.
 
-**Botiquette** — la incomodidad de no saber si hablas con una persona o un bot en un chat de soporte, y qué tono usar en cada caso. Con un humano tiene sentido ser cercano; con un bot, toda cortesía sobra. Nos falta un término medio. Por  cierto, si dais con un humano comprad un décimo de la lotería ese mismo día.
+**Botiquette** — la incomodidad de no saber si hablas con una persona o un bot en un chat de soporte, y qué tono usar en cada caso. Con un humano tiene sentido ser cercano; con un bot, toda cortesía sobra. Nos falta un término medio. Por cierto, si das con un humano, compra un décimo de la lotería ese mismo día.
 
 **Chattermining** — esa sensación —¿paranoia, o no tanto?— de que el móvil te "escucha" en una conversación y, minutos después, los anuncios ya saben de qué hablabas. Te ha pasado y lo sabes.
 
