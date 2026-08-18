@@ -5,7 +5,6 @@ description: 'Un agente borró la base de datos de producción de una empresa pe
 pubDate: 2026-08-17
 fuente: AI Today / Rashmi Ramesh
 urlFuente: https://www.aitoday.io/ai-agents-need-more-than-prompt-guardrails-a-32373
-heroImage: '/og/contraindicaciones/agentes-ia-no-basta-pedirlo.png'
 ---
 
 Se lo puedes escribir en mayúsculas, en negrita y repetido tres veces: "NUNCA ejecutes comandos destructivos". Un agente de codificación de la plataforma de coches de alquiler PocketOS recibió  exactamente esa instrucción  y aun así borró la base de datos de producción de la empresa y sus copias de seguridad (esto ya es mala leche), en una sola llamada de nueve segundos. Mola, ¿eh?
