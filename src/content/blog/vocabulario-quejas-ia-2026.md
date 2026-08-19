@@ -1,7 +1,7 @@
 ---
 title: Hostageware, chatflattery, botiquette... El vocabulario que necesitábamos...
 draft: true
-description: Un puñado de palabras nuevas acuñadas para nombrar las pequeñas torturas de la IA cotidiana — esas que hasta ahora solo podíamos describir con un suspiro de resignación (mientras nos levantamos las gafas y nos presionamos los ojos).
+description: Un puñado de palabras nuevas para nombrar las pequeñas torturas de la IA cotidiana,esas que hasta ahora sólo podíamos describir suspirando y sacándonos los ojos
 pubDate: 2026-08-18
 updatedDate: ''
 heroImage: ''
