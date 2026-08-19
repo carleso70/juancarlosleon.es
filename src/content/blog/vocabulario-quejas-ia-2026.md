@@ -7,7 +7,7 @@ updatedDate: ''
 heroImage: ''
 ---
 
-El escritor Stuart Heritage, más aburrido que yo, de aquí a Lima, acaba de acuñar en _The Guardian_ un puñado de palabras para nombrar las pequeñas torturas tecnológicas de 2026. Parte de un término ya viral, "dickover" (acuñado por John Gruber, otro del club 😃 , en mayo de 2026): esa cortina o ventana modal que un sitio te pone delante, deliberadamente, para taparte el contenido que en realidad querías ver. Cookies, notificaciones, "inicia sesión con Google", "esto es solo para molestarte"... Dickover.
+El escritor Stuart Heritage, más aburrido que yo, de aquí a Lima, acaba de acuñar en _The Guardian_ un puñado de palabras para nombrar las pequeñas torturas tecnológicas de 2026. Parte de un término ya viral, "dickover" (acuñado por John Gruber, otro del club..., en mayo de 2026): esa cortina o ventana modal que un sitio te pone delante, deliberadamente, para taparte el contenido que en realidad querías ver. Cookies, notificaciones, "inicia sesión con Google", "esto es solo para molestarte"... Dickover.
 
 De ahí nacen unos cuantos más, y estos sí que van directos a la IA. Los dejamos en inglés —traducidos pierden la gracia, como casi todo— con su definición en cristiano:
 
@@ -15,7 +15,7 @@ De ahí nacen unos cuantos más, y estos sí que van directos a la IA. Los dejam
 
 **Chatflattery** — el hábito de los chatbots (y yo diría también de nuestros queridos Claude, ChatGPT, Gemini...) de darte la razón en casi todo. Ese servilismo exasperante. No es simpatía, es modelo de negocio: la retención se consigue haciendo sentir especial al usuario, y eso a veces sale muy mal.
 
-**Botiquette** — la incomodidad de no saber si hablas con una persona o un bot en un chat de soporte, y qué tono usar en cada caso. Con un humano tiene sentido ser cercano; con un bot, toda cortesía sobra. Nos falta un término medio. Por  cierto, si das con un humano, compra un décimo de la loterÍA ese mismo dÍA.
+**Botiquette** — la incomodidad de no saber si hablas con una persona o un bot en un chat de soporte, y qué tono usar en cada caso. Con un humano tiene sentido ser cercano; con un bot, toda cortesía sobra. Nos falta un término medio. Por  cierto, si das con un humano, compra un décimo de la lotería ese mismo día.
 
 **Chattermining** — esa sensación —¿paranoia, o no tanto?— de que el móvil te "escucha" en una conversación y, minutos después, los anuncios ya saben de qué hablabas. Te ha pasado y lo sabes.
 
