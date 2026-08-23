@@ -5,7 +5,7 @@ pubDate: 2026-08-23
 draft: true
 ---
 
-Google acaba de lanzar un botón —literal, insertable en tu web— para que tus lectores te marquen como "fuente preferida". A partir de ahí, verán más contenido tuyo en Google Search, en Discover y en Google News. El dato que enseñan para venderlo: desde mayo, más de 345.000 sitios ya han sido marcados como preferidos por algún usuario, y aseguran que la gente tiene el doble de probabilidad de hacer clic en una fuente preferida que en una que no lo es.
+"Fuentes preferidas" no es nuevo — Google lo lanzó en agosto de 2025 y lo ha ido ampliando desde entonces: a todos los idiomas en abril, a los resúmenes de IA en mayo. Lo que sí es nuevo, desde esta semana, es un botón —literal, insertable en tu propia web— para que tus lectores te marquen como fuente preferida sin salir de tu página. A partir de ahí, verán más contenido tuyo en Google Search, en Discover y en Google News. El dato que enseñan para venderlo: más de 600.000 fuentes ya han sido marcadas como preferidas desde que arrancó la función, y aseguran que la gente tiene el doble de probabilidad de hacer clic en una fuente preferida que en una que no lo es.
 
 Suena bien. El problema es de dónde viene la necesidad de este botón.
 
