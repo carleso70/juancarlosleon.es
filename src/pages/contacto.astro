@@ -16,7 +16,7 @@ import { SITE_TITLE } from '../consts';
 			<h1 class="page-title">Contacto</h1>
 			<p class="intro">Si tienes algo que decirme, una pregunta, una propuesta, o simplemente quieres compartir tu canción favorita — adelante.</p>
 
-			<form action="https://formspree.io/f/mqeoyoqn" method="POST">
+			<form id="contact-form" action="https://formspree.io/f/mqeoyoqn" method="POST">
 				<div class="field">
 					<label for="nombre">Nombre</label>
 					<input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
@@ -39,6 +39,26 @@ import { SITE_TITLE } from '../consts';
 
 				<button type="submit">Enviar</button>
 			</form>
+
+			<script>
+				// Envío en paralelo a n8n, sin bloquear ni depender del resultado.
+				// Formspree sigue siendo el envío principal (action del form).
+				const N8N_WEBHOOK_URL = 'https://slapping-survive-frail.ngrok-free.dev/webhook/contacto-jcl';
+
+				const form = document.getElementById('contact-form') as HTMLFormElement | null;
+				form?.addEventListener('submit', () => {
+					const data = new FormData(form);
+					const payload = Object.fromEntries(data.entries());
+					fetch(N8N_WEBHOOK_URL, {
+						method: 'POST',
+						headers: { 'Content-Type': 'application/json' },
+						body: JSON.stringify(payload),
+						keepalive: true,
+					}).catch(() => {
+						// Si n8n no responde (túnel caído, etc.), no bloqueamos el envío a Formspree.
+					});
+				});
+			</script>
 		</main>
 		<Footer />
 	</body>
