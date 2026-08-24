@@ -1,6 +1,6 @@
 ---
 title: El botón que Google te da para arreglar lo que rompió Google
-draft: true
+draft: false
 description: Google lanza un botón para que usuarios marquen tu web como fuente preferida.El problema que intenta resolver lo causó el propio Google con sus resúmenes de IA.
 pubDate: 2026-08-24
 updatedDate: ''
