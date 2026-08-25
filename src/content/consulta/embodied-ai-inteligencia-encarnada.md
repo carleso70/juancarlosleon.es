@@ -2,12 +2,12 @@
 title: 'IA Encarnada: la inteligencia artificial que necesita cuerpo'
 draft: true
 description: 'Claude o ChatGPT conocen el mundo por texto. La embodied AI, o IA Encarnada, apuesta lo contrario: aprender moviéndose por el mundo físico, no leyendo sobre él.'
-pubDate: 2026-08-20
+pubDate: 2026-08-25
 updatedDate: ''
 heroImage: ''
 ---
 
-Toda la IA con la que hablas a diario —Claude, ChatGPT, Gemini— aprendió del mundo leyendo. Textos, imágenes, código. Nunca ha movido un dedo, literalmente, porque no tiene dedos. La **embodied AI** (inteligencia encarnada, o "IA con cuerpo") parte de una apuesta distinta: hay una parte del sentido común —cómo cae un objeto, cuánta fuerza hace falta para no romper un huevo, cómo esquivar una silla— que no se aprende leyendo sobre ello. Se aprende chocándose con el mundo real. Como hemos aprendido tú y yo.
+Toda la IA con la que hablas a diario —Claude, ChatGPT, Gemini— aprendió del mundo y de la vida leyendo. Textos, imágenes, código. Nunca ha movido un dedo, literalmente, porque no tiene dedos. La **embodied AI** (inteligencia encarnada, o "IA con cuerpo") parte de una apuesta distinta: hay una parte del sentido común —cómo cae un objeto, cuánta fuerza hace falta para no romper un huevo, cómo esquivar una silla— que no se aprende leyendo sobre ello. Se aprende chocándose con el mundo real. Como hemos aprendido tú y yo (aunque eso de romper los huevos podría mejorarlo...).
 
 Por eso este campo, este término, marida dos cosas que hasta hace poco iban por separado: modelos de IA y cuerpos físicos —casi siempre robots— con sensores y motores. El modelo ya no solo predice la siguiente palabra (eso ya suena incluso a antiguo...): interpreta lo que ven sus cámaras y decide qué mueve, cuánto y en qué dirección, en tiempo real, sin poder deshacer el error si se equivoca. Aquí no hay CTRL+Z.
 
