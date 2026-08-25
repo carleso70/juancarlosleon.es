@@ -1,6 +1,6 @@
 ---
 title: 'IA Encarnada: la inteligencia artificial que necesita cuerpo'
-draft: true
+draft: false
 description: 'Claude o ChatGPT conocen el mundo por texto. La embodied AI, o IA Encarnada, apuesta lo contrario: aprender moviéndose por el mundo físico, no leyendo sobre él.'
 pubDate: 2026-08-25
 updatedDate: ''
