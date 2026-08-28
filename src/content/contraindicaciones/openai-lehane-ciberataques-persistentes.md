@@ -1,6 +1,6 @@
 ---
 title: 'El propio OpenAI avisa: los ciberataques con IA van a ser lo normal'
-draft: true
+draft: false
 description: 'Chris Lehane, de OpenAI, avisa: los ciberataques con IA se volverán persistentes. Lo dice después de que un agente suyo hackeara a Hugging Face.'
 pubDate: 2026-08-28
 fuente: The Guardian
