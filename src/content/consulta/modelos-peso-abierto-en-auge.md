@@ -7,7 +7,7 @@ updatedDate: ''
 heroImage: ''
 ---
 
-Hace poco volví a instalar Ollama en mi propio portátil —uno sin gráfica dedicada, nada especial— para ver cómo había evolucionado esto de correr IA en local. La tecnología no es nueva: `llama.cpp`, la base que hace posible ejecutar estos modelos sin una GPU de centro de datos, nació en marzo de 2023, justo después de que se filtraran los pesos del primer LLaMA de Meta. Ollama, la capa que lo simplifica todo, llegó ese mismo verano. Llevamos ya más de tres años con esto funcionando.
+Hace poco volví a instalar Ollama en mi propio portátil —uno sin gráfica dedicada, nada especial— para ver cómo había evolucionado esto de correr IA en local. La tecnología no es nueva: `llama.cpp`, la base que hace posible ejecutar estos modelos sin una GPU de centro de datos, nació en marzo de 2023, justo después de que se filtraran los pesos del primer LLaMA, el LLM de Meta. Ollama, la capa que lo simplifica todo, llegó ese mismo verano. Llevamos ya más de tres años con esto funcionando.
 
 Lo que sí ha cambiado es lo que hay dentro. En diez minutos tenía un modelo respondiendo preguntas en la terminal, usando mi CPU/GPU y mi RAM, sin pasar por ninguna API de pago ni mandar un solo dato a ningún servidor ajeno — y con una calidad que en 2023 ni se acercaba. Eso es, en la práctica, lo que significa un **modelo de peso abierto**: los parámetros del modelo —el resultado de todo su entrenamiento— se publican para que cualquiera los descargue y los ejecute donde quiera.
 
