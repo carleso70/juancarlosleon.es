@@ -2,7 +2,6 @@
 title: "No compres tecnología ni automatices nada sin hacer esto antes"
 description: "Antes de firmar cualquier compra de tecnología o automatización, hay tres criterios y cinco preguntas que casi nadie se para a hacer — y que ahorran más dinero que cualquier descuento."
 pubDate: 2026-08-31
-etiqueta: "Estrategia"
 draft: true
 ---
 
@@ -30,6 +29,4 @@ Si prefieres algo más rápido de aplicar, estas cinco preguntas resumen los tre
 
 ## Por qué esto no lo hace casi nadie
 
-Porque para cuando alguien busca una herramienta, ya ha decidido comprar algo — la pregunta que se hace es "¿cuál?", no "¿debería?". Pararse a responder estas cinco preguntas antes retrasa la compra un par de días. Compensa: evita comprar la herramienta equivocada, que sale bastante más caro que esperar.
-
-Si quieres pasar tu próxima decisión de tecnología por este filtro antes de firmar nada, puedes consultarme [aquí](/contacto).
+Porque cuando alguien se pone a buscar una herramienta, ya ha decidido comprar algo — la pregunta que se hace es "¿cuál?", no "¿debería?". Responder estas cinco preguntas antes de decidir retrasa la compra un par de días. Merece la pena: sale más barato esperar que comprar la herramienta equivocada.
