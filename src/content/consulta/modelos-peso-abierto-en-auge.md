@@ -1,8 +1,8 @@
 ---
 title: Por qué los modelos de peso abierto están ganando terreno
-draft: true
+draft: false
 description: Volví a correr un modelo de IA en local después de un tiempo, para ver cómo había evolucionado. La tecnología lleva tres años aquí; lo que ha cambiado es la calidad de los modelos.
-pubDate: 2026-08-30
+pubDate: 2026-08-31
 updatedDate: ''
 heroImage: ''
 ---
