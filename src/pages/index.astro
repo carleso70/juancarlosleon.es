@@ -21,6 +21,10 @@ const recetas = (await getCollection('recetas', ({ data }) => !data.draft)).sort
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 ).slice(0, 3);
 
+const consulta = (await getCollection('consulta', ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 3);
+
 const hoy = new Date();
 const esDeHoy = (fecha: Date) => {
 	return fecha.getFullYear() === hoy.getFullYear() &&
@@ -115,6 +119,23 @@ const esDeHoy = (fecha: Date) => {
 					))}
 				</div>
 				<a href="/recetas" class="btn btn-recetas">Ver recetas</a>
+			</section>
+
+			<section class="recent-consulta">
+				<h2 class="section-title">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a16,16,0,1,1,16,16A16,16,0,0,1,112,84Z"/></svg>
+					Consulta
+				</h2>
+				<div class="cards">
+					{consulta.map(post => (
+						<a href={`/consulta/${post.id}/`} class:list={['card', { 'card--hoy': esDeHoy(post.data.pubDate) }]} data-pubdate={post.data.pubDate.toISOString()}>
+							<time>{post.data.pubDate.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+							<h3>{post.data.title}</h3>
+							<p>{post.data.description}</p>
+						</a>
+					))}
+				</div>
+				<a href="/consulta" class="btn">Ver Consulta</a>
 			</section>
 		</main>
 		<Footer />
@@ -330,6 +351,11 @@ const esDeHoy = (fecha: Date) => {
 	.card--hoy {
 		background: #F0F7F1;
 		border-color: #6B8F71;
+	}
+	.recent-consulta {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid #D8D6CE;
 	}
 	@media (max-width: 720px) {
 		.hero h1 { font-size: 2rem; }
