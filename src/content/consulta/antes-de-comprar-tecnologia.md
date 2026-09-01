@@ -1,6 +1,6 @@
 ---
 title: No compres tecnología ni automatices nada sin hacer esto antes
-draft: true
+draft: false
 description: Antes de firmar cualquier compra de tecnología o automatización, hay tres criterios y cinco preguntas que casi nadie se para a hacer y que ahorran más dinero que cualquier descuento.
 pubDate: 2026-09-01
 updatedDate: ''
