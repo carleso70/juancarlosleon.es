@@ -10,46 +10,22 @@ Mirar las cuentas de Instagram de la competencia a mano —contar likes, apuntar
 
 ## Los ingredientes
 
-- Una cuenta en [Apify](https://apify.com) (el plan gratuito da para empezar)
-- Un actor de scraping de Instagram (hay varios en el Apify Store, ya probados)
-- n8n, para encadenar los pasos sin escribir código
-- Claude o cualquier modelo con buen razonamiento, para interpretar los datos en bruto
+- Un scraper de redes sociales (hay varios servicios especializados en esto)
+- Una herramienta de automatización que encadene los pasos sin depender de que tú los ejecutes a mano
+- Un modelo de IA con buen razonamiento, para interpretar los datos en bruto y no solo mostrarlos
 
-## El flujo
+## La lógica del flujo
 
-**1. Trigger programado** — un nodo Schedule en n8n dispara el proceso cada semana, el día y hora que elijas.
+**1. Se dispara solo** — cada semana, sin que tengas que acordarte.
 
-**2. Petición al scraper** — un nodo HTTP Request llama al actor de Apify vía su API, pasándole la URL de la cuenta a analizar y cuántos posts quieres traer:
+**2. Recoge los datos** — de las cuentas que quieras vigilar: frecuencia de publicación, formato, engagement, hashtags.
 
-```json
-{
-  "directUrls": ["https://www.instagram.com/CUENTA/"],
-  "resultsType": "posts",
-  "resultsLimit": 15
-}
-```
+**3. Filtra el ruido** — de todo lo que trae un scraper (comentarios, avatares, URLs de imágenes), solo importa un puñado de campos. El resto sobra.
 
-**3. Los datos que importan** — de la respuesta, lo que de verdad cuenta no es la publicación en sí, es el patrón: `likesCount` y `commentsCount` (engagement), `timestamp` (frecuencia y horario de publicación), `type` (foto, carrusel o vídeo), `hashtags`. El resto —comentarios, avatares, URLs de imágenes— es ruido para este propósito.
+**4. La IA interpreta, no solo resume** — ¿qué formato les funciona mejor? ¿A qué hora publican? ¿Qué engagement rate mueven de media? ¿Hay algún patrón de hashtags que se repita en sus posts más exitosos? Eso es lo que de verdad quieres saber, no una tabla de números sueltos.
 
-**4. La IA interpreta** — un nodo de Claude recibe ese resumen y responde a lo que de verdad importa: ¿qué formato les funciona mejor? ¿A qué hora publican? ¿Qué engagement rate mueven de media? ¿Hay algún patrón de hashtags que se repita en sus posts más exitosos?
+**5. El informe llega solo** — a tu email, sin que tengas que abrir Instagram ni una vez.
 
-**5. El informe llega solo** — un email semanal, sin que tengas que abrir Instagram ni una vez.
+---
 
-## El prompt de interpretación
-
-```plain
-Eres un analista de redes sociales. Te paso los datos en 
-bruto de los últimos 15 posts de una cuenta de Instagram.
-
-Identifica:
-- Frecuencia de publicación y horario habitual
-- Formato que genera más engagement (foto/carrusel/vídeo)
-- Engagement rate medio (likes+comentarios / total de posts)
-- Patrones de hashtags en los posts más exitosos
-
-Datos: [JSON de los posts]
-```
-
-***
-
-Esto convierte una tarea tediosa en un informe que llega solo cada lunes por la mañana. Si quieres montarlo para tu propio caso, puedes consultarme [aquí](/contacto).
+El resultado: pasar de perder una tarde entera copiando métricas a mano, a recibir un análisis ya interpretado cada lunes por la mañana. La parte técnica —qué herramientas concretas, cómo conectarlas, cómo evitar que el coste se dispare— depende de cada caso. Si quieres montarlo para el tuyo, puedes consultarme [aquí](/contacto).
