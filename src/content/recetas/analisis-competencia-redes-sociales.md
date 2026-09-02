@@ -1,12 +1,12 @@
 ---
-title: "Análisis de competencia en redes sociales: automatizado, no manual"
-description: "Dejar de copiar métricas a mano de Instagram. Con un scraper, un flujo automatizado y una IA que interpreta los datos, el análisis se repite solo cada semana."
-pubDate: 2026-09-02
-etiqueta: "Automatización"
+title: 'Análisis de competencia en redes sociales: automatizado, no manual'
 draft: true
+description: Dejar de copiar métricas a mano de Instagram. Con un scraper, un flujo automatizado y una IA que interpreta los datos, el análisis se repite solo cada semana.
+pubDate: 2026-09-02
+etiqueta: Automatización
 ---
 
-Mirar las cuentas de Instagram de la competencia a mano —contar likes, apuntar horarios, copiar hashtags en un Excel— es un trabajo que nadie disfruta y que además caduca en cuanto lo terminas. La alternativa: automatizarlo entero, y que solo tengas que leer las conclusiones.
+Mirar las cuentas de Instagram de la competencia a mano —contar likes, apuntar horarios, copiar hashtags en un Excel— es un trabajo que nadie disfruta y que además caduca en cuanto lo terminas, eso ya suena a otra época. La alternativa: automatizarlo entero, y que solo tengas que leer las conclusiones.
 
 ## Los ingredientes
 
@@ -37,7 +37,7 @@ Mirar las cuentas de Instagram de la competencia a mano —contar likes, apuntar
 
 ## El prompt de interpretación
 
-```
+```plain
 Eres un analista de redes sociales. Te paso los datos en 
 bruto de los últimos 15 posts de una cuenta de Instagram.
 
@@ -50,6 +50,6 @@ Identifica:
 Datos: [JSON de los posts]
 ```
 
----
+***
 
 Esto convierte una tarea tediosa en un informe que llega solo cada lunes por la mañana. Si quieres montarlo para tu propio caso, puedes consultarme [aquí](/contacto).
