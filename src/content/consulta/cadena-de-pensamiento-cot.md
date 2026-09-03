@@ -2,7 +2,7 @@
 title: 'Cadena de pensamiento: cuando la IA piensa en voz alta'
 draft: false
 description: Por qué pedirle a un modelo que "razone paso a paso" mejora tanto sus respuestas, y cómo lo hemos visto funcionar en primera persona esta misma semana.
-pubDate: 2026-09-02
+pubDate: 2026-09-03
 updatedDate: ''
 heroImage: ../../assets/og-cadena-pensamiento.png
 ---
