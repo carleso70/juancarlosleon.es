@@ -1,11 +1,11 @@
 ---
 title: 'Obsidian: tu segundo cerebro, pero en tu propio disco'
-description: 'Notas en Markdown, enlazadas entre sí, guardadas en local. Sin depender de la nube de nadie.'
-pubDate: '2026-08-25'
-url: 'https://obsidian.md'
-gratis: true
-etiqueta: 'Productividad'
 draft: true
+description: Notas en Markdown (.md), enlazadas entre sí, guardadas en local. Sin depender de la nube de nadie.
+pubDate: 2026-08-25
+url: https://obsidian.md
+gratis: true
+etiqueta: Productividad
 ---
 
 Notion vive en la nube. Obsidian vive en tu disco duro. Esa es la diferencia que lo explica casi todo.
@@ -24,7 +24,7 @@ Tiene curva de aprendizaje si quieres exprimirlo con plugins (hay cientos, hecho
 
 Gratis para uso personal. La sincronización entre dispositivos es de pago, aunque puedes usar Dropbox, iCloud o Google Drive gratis como alternativa.
 
----
+***
 
 <a href="https://obsidian.md" target="_blank" rel="noopener noreferrer" class="btn-web">Visitar Obsidian →</a>
 
