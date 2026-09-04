@@ -18,7 +18,11 @@ Escribes `[[el nombre de otra nota]]` y Obsidian la conecta automáticamente. Co
 
 **¿Y la IA?**
 
-Aquí Obsidian juega otro partido. A diferencia de Notion, no trae una IA integrada de fábrica — no vas a encontrar un asistente nativo escribiendo por ti dentro de la app. Lo que sí tiene es una comunidad enorme de plugins, varios de los cuales conectan tus notas con Claude, ChatGPT o modelos locales, para resumir, preguntar sobre tu propio contenido o generar ideas a partir de lo que ya has escrito. Tú decides qué IA usar, y con qué datos —porque, recuerda, tus notas nunca salen de tu disco a menos que tú lo permitas. Para quien le preocupa la privacidad de lo que comparte con una IA, esa es la gran baza: puedes montarte un "segundo cerebro" con superpoderes de IA sin que ese cerebro viva en un servidor ajeno.
+Aquí Obsidian juega otro partido. A diferencia de Notion, no trae una IA integrada de fábrica — no vas a encontrar un asistente nativo escribiendo por ti dentro de la app. Lo que sí tiene es una comunidad enorme de plugins, varios de los cuales conectan tus notas con Claude, ChatGPT o modelos locales, para resumir, preguntar sobre tu propio contenido o generar ideas a partir de lo que ya has escrito.
+
+**Web Clipper**
+
+Otra pieza que merece mención aparte: el **Obsidian Web Clipper**, una extensión oficial de navegador que te permite guardar cualquier página web directamente en tu vault, convertida a Markdown al vuelo. Un artículo, una receta, la documentación de una herramienta — lo capturas con un clic y queda ahí, editable, buscable y enlazable con el resto de tus notas. Nada de pestañas abiertas acumulándose ni marcadores que nunca vuelves a mirar.
 
 **¿Para quién tiene sentido?**
 
