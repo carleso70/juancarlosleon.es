@@ -22,7 +22,7 @@ Aquí Obsidian juega otro partido. A diferencia de Notion, no trae una IA integr
 
 **Web Clipper**
 
-Otra pieza que merece mención aparte: el **Obsidian Web Clipper**, una extensión oficial de navegador que te permite guardar cualquier página web directamente en tu vault, convertida a Markdown al vuelo. Un artículo, una receta, la documentación de una herramienta — lo capturas con un clic y queda ahí, editable, buscable y enlazable con el resto de tus notas. Nada de pestañas abiertas acumulándose ni marcadores que nunca vuelves a mirar.
+Otra pieza que merece mención aparte: el **Obsidian Web Clipper**, una extensión oficial de navegador que te permite guardar cualquier página web directamente en tu bóveda (recuerda, tu carpeta, hablando en cristiano), convertida a Markdown al vuelo. Un artículo, una receta, la documentación de una herramienta; lo capturas con un clic y queda ahí, editable, buscable y enlazable con el resto de tus notas. Nada de pestañas abiertas acumulándose ni marcadores que nunca vuelves a mirar.
 
 **¿Para quién tiene sentido?**
 
