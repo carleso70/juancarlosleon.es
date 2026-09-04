@@ -10,7 +10,7 @@ etiqueta: Productividad
 
 Notion vive en la nube, y nosotros no tenemos nubes. Obsidian vive en tu disco duro. Esa es la diferencia que lo explica casi todo.
 
-Cada nota es un archivo Markdown normal y corriente, guardado en una carpeta de tu ordenador. Nada de bases de datos propietarias ni de depender de que un servidor ajeno siga funcionando dentro de diez años, o te quiera duplicar el precio. Lo que escribes es tuyo, literalmente.
+Cada nota es un archivo Markdown normal y corriente (están muy de moda, ¿eh?), guardado en una carpeta de tu ordenador. Nada de bases de datos propietarias ni de depender de que un servidor ajeno siga funcionando dentro de diez años, o te quiera duplicar el precio. Lo que escribes es tuyo, literalmente.
 
 **El truco está en los enlaces**
 
@@ -18,7 +18,7 @@ Escribes `[[el nombre de otra nota]]` y Obsidian la conecta automáticamente. Co
 
 **¿Para quién tiene sentido?**
 
-Para quien toma muchas notas, investiga, escribe con frecuencia o simplemente quiere un "segundo cerebro" que no dependa de un tercero. También es la app favorita de mucha gente que usa Markdown para todo: guiones, artículos, documentación técnica.
+Para quien toma muchas notas, investiga, escribe con frecuencia o simplemente quiere un "segundo cerebro" que no dependa de otro actor o proveedor. También es la app favorita de mucha gente que usa Markdown para todo: guiones, artículos, documentación técnica. Hay gente para todo.
 
 Tiene curva de aprendizaje si quieres exprimirlo con plugins (hay cientos, hechos por la comunidad), pero de salida, a pelo, ya funciona bien tal cual.
 
