@@ -2,7 +2,7 @@
 title: 'Obsidian: tu segundo cerebro, pero en tu propio disco'
 draft: false
 description: Notas en Markdown (.md), enlazadas entre sí, guardadas en local. Sin depender de la nube de nadie.
-pubDate: 2026-09-03
+pubDate: 2026-09-04
 url: https://obsidian.md
 gratis: true
 etiqueta: Productividad
