@@ -16,6 +16,10 @@ Cada nota es un archivo Markdown normal y corriente (están muy de moda, ¿eh?),
 
 Escribes `[[el nombre de otra nota]]` y Obsidian la conecta automáticamente. Con el tiempo, esas conexiones dibujan un mapa visual —el "gráfico"— donde puedes ver cómo se relacionan tus ideas entre sí. No es una lista de carpetas: **es una red**.
 
+**¿Y la IA?**
+
+Aquí Obsidian juega otro partido. A diferencia de Notion, no trae una IA integrada de fábrica — no vas a encontrar un asistente nativo escribiendo por ti dentro de la app. Lo que sí tiene es una comunidad enorme de plugins, varios de los cuales conectan tus notas con Claude, ChatGPT o modelos locales, para resumir, preguntar sobre tu propio contenido o generar ideas a partir de lo que ya has escrito. Tú decides qué IA usar, y con qué datos —porque, recuerda, tus notas nunca salen de tu disco a menos que tú lo permitas. Para quien le preocupa la privacidad de lo que comparte con una IA, esa es la gran baza: puedes montarte un "segundo cerebro" con superpoderes de IA sin que ese cerebro viva en un servidor ajeno.
+
 **¿Para quién tiene sentido?**
 
 Para quien toma muchas notas, investiga, escribe con frecuencia o simplemente quiere un "segundo cerebro" que no dependa de otro actor o proveedor. También es la app favorita de mucha gente que usa Markdown para todo: guiones, artículos, documentación técnica. Hay gente para todo.
