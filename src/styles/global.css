@@ -99,6 +99,53 @@ pre > code {
 
 .prose p { margin-bottom: 1.5rem; }
 
+.prose strong {
+	font-weight: 500;
+	color: #1a1a18;
+}
+.prose em {
+	font-style: italic;
+	color: #5F5E5A;
+}
+.prose blockquote {
+	border-left: 3px solid #6B8F71;
+	padding: 0.25rem 0 0.25rem 1.25rem;
+	margin: 1.5rem 0;
+	color: #5F5E5A;
+	font-style: italic;
+}
+.prose table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 0 1.75rem;
+	font-size: 0.95rem;
+}
+.prose th,
+.prose td {
+	padding: 0.6rem 1rem;
+	text-align: left;
+	border-bottom: 1px solid #D8D6CE;
+}
+.prose th:first-child,
+.prose td:first-child {
+	padding-left: 0;
+}
+.prose th {
+	font-family: 'Playfair Display', Georgia, serif;
+	font-weight: 500;
+	color: #2C2C2A;
+	border-bottom: 2px solid #6B8F71;
+}
+.prose th:last-child,
+.prose td:last-child {
+	text-align: right;
+	color: #5F5E5A;
+	font-variant-numeric: tabular-nums;
+}
+.prose tr:last-child td {
+	border-bottom: none;
+}
+
 @media (max-width: 720px) {
 	body { font-size: 16px; }
 	h1 { font-size: 2rem; }

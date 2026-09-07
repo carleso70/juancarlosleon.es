@@ -129,24 +129,8 @@ const schemaBlogPost = {
 		line-height: 1.8;
 		color: #2C2C2A;
 	}
-	.prose p {
-		margin-bottom: 1.5rem;
-	}
-	.prose strong {
-		font-weight: 500;
-		color: #1a1a18;
-	}
-	.prose em {
-		font-style: italic;
-		color: #5F5E5A;
-	}
-	.prose blockquote {
-		border-left: 3px solid #6B8F71;
-		padding: 0.25rem 0 0.25rem 1.25rem;
-		margin: 1.5rem 0;
-		color: #5F5E5A;
-		font-style: italic;
-	}
+	/* p, strong, em, blockquote, table: estilos en global.css (el contenido de <Content />
+	   no lleva el atributo de scope de Astro, así que las reglas con scope aquí no aplicarían) */
 	.post-footer {
 		margin-top: 3rem;
 		padding-top: 2rem;

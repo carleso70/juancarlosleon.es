@@ -17,29 +17,19 @@ La cifra en sí importa menos que lo que describe: un ritmo de lanzamiento que y
 
 Para poner el ritmo en perspectiva: **entre Windows 3.1 (1992) y Windows 11 (2021) pasaron casi 30 años**, y Microsoft sacó 11 versiones principales de su sistema operativo —una cada dos años y medio, más o menos—. 
 
-Versión	Fecha
-
-Windows 3.1	6 abril 1992
-
-Windows 95	24 agosto 1995
-
-Windows 98	25 junio 1998
-
-Windows ME	14 septiembre 2000
-
-Windows XP	25 octubre 2001
-
-Windows Vista	30 enero 2007
-
-Windows 7	22 octubre 2009
-
-Windows 8	26 octubre 2012
-
-Windows 8.1	17 octubre 2013
-
-Windows 10	29 julio 2015
-
-Windows 11	5 octubre 2021
+| Versión | Fecha |
+|---|---|
+| Windows 3.1 | 6 abril 1992 |
+| Windows 95 | 24 agosto 1995 |
+| Windows 98 | 25 junio 1998 |
+| Windows ME | 14 septiembre 2000 |
+| Windows XP | 25 octubre 2001 |
+| Windows Vista | 30 enero 2007 |
+| Windows 7 | 22 octubre 2009 |
+| Windows 8 | 26 octubre 2012 |
+| Windows 8.1 | 17 octubre 2013 |
+| Windows 10 | 29 julio 2015 |
+| Windows 11 | 5 octubre 2021 |
 
 La industria de la IA, solo entre ocho empresas, **ha superado esa cifra de lanzamientos en ocho meses**.
 
