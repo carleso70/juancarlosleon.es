@@ -2,7 +2,7 @@
 title: 67 modelos de IA lanzados en lo que va de año. Y contando.
 draft: true
 description: Un tracker cuenta 67 modelos lanzados en 2026 solo entre ocho empresas de EE.UU. y China. La cifra en sí importa menos que el ritmo que describe.
-pubDate: 2026-09-06
+pubDate: 2026-09-07
 updatedDate: ''
 heroImage: ''
 fuente: The Guardian
