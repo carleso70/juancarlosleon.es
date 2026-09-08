@@ -9,7 +9,7 @@ fuente: The Guardian
 urlFuente: https://www.theguardian.com/technology/2026/sep/05/uncontrollable-ai-artificial-general-intelligence-warnings
 ---
 
-Según un conteo de [aireleasetracker.com](https://aireleasetracker.com/) (hay gente para todo), ya van 67 modelos de IA lanzados este año solo entre ocho empresas: OpenAI, Anthropic, Google, Meta y SpaceX por parte de Estados Unidos —sí, SpaceX: la empresa se fusionó con xAI en febrero por 1,25 billones de dólares, y en julio xAI se disolvió como compañía aparte para pasar a llamarse SpaceXAI, así que Grok también cuenta ahora en ese conteo—, y Moonshot, Z.ai y Qwen por parte de China, el monstruo que nunca duerme.
+Según un conteo de [aireleasetracker.com](https://aireleasetracker.com/) (hay gente para todo), ya van **67 modelos de IA** lanzados este año solo entre ocho empresas: OpenAI, Anthropic, Google, Meta y SpaceX por parte de Estados Unidos —sí, SpaceX: la empresa se fusionó con xAI en febrero por 1,25 billones de dólares, y en julio xAI se disolvió como compañía aparte para pasar a llamarse SpaceXAI, así que Grok también cuenta ahora en ese conteo—, y Moonshot, Z.ai y Qwen por parte de China, el monstruo que nunca duerme.
 
 Faltan menos de cuatro meses para acabar el año y ya vamos casi a un modelo cada dos días contando solo estas ocho empresas. Y eso sin sumar a Mistral, DeepSeek, Alibaba más allá de Qwen, ni a las decenas de laboratorios más pequeños que también publican con regularidad.
 
@@ -33,4 +33,4 @@ Para poner el ritmo en perspectiva: **entre Windows 3.1 (1992) y Windows 11 (202
 
 La industria de la IA, solo entre ocho empresas, **ha superado esa cifra de lanzamientos en ocho meses**.
 
-Dato con fecha de caducidad, como casi todo en este mundillo (por eso este post va en "Píldoras"): dentro de un mes esta cifra ya será otra, más alta.
+Dato con fecha de caducidad, como casi todo en este mundillo (por eso este post va en "Píldoras"): dentro de un mes esta cifra ya será otra, más alta. Incluso mientras escribo esto pupede que ya se haya actualizado. No pienso comprobarlo.
