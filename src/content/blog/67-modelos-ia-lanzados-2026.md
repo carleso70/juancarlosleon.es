@@ -13,7 +13,7 @@ Según un conteo de [aireleasetracker.com](https://aireleasetracker.com/) (hay g
 
 Faltan menos de cuatro meses para acabar el año y ya vamos casi a un modelo cada dos días contando solo estas ocho empresas. Y eso sin sumar a Mistral, DeepSeek, Alibaba más allá de Qwen, ni a las decenas de laboratorios más pequeños que también publican con regularidad.
 
-La cifra en sí importa menos que lo que describe: un ritmo de lanzamiento que ya no deja tiempo a que nadie —usuarios, empresas, reguladores— asimile bien un modelo antes de que llegue el siguiente. Cuesta evaluar riesgos, ventajas, o simplemente "qué modelo me conviene usar hoy" cuando la oferta cambia cada 48 horas. Los "diagnosticados" como FOMO están al borde del ataque de ansiedad.
+La cifra en sí importa menos que lo que describe: un ritmo de lanzamiento que ya no deja tiempo a que nadie —usuarios, empresas, reguladores— asimile bien un modelo antes de que llegue el siguiente. Cuesta evaluar riesgos, ventajas, o simplemente "qué modelo me conviene usar hoy" cuando la oferta cambia cada 48 horas. Los "diagnosticados" con FOMO están al borde del ataque de ansiedad.
 
 Para poner el ritmo en perspectiva: **entre Windows 3.1 (1992) y Windows 11 (2021) pasaron casi 30 años**, y Microsoft sacó 11 versiones principales de su sistema operativo —una cada dos años y medio, más o menos—. 
 
