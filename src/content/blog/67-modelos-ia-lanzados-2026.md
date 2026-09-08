@@ -1,8 +1,8 @@
 ---
 title: 67 modelos de IA lanzados en lo que va de año. Y sumando.
-draft: true
+draft: false
 description: Un tracker cuenta 67 modelos lanzados en 2026 solo entre ocho empresas de EE.UU. y China. La cifra en sí importa menos que el ritmo que describe.
-pubDate: 2026-09-07
+pubDate: 2026-09-08
 updatedDate: ''
 heroImage: ''
 fuente: The Guardian
@@ -18,7 +18,7 @@ La cifra en sí importa menos que lo que describe: un ritmo de lanzamiento que y
 Para poner el ritmo en perspectiva: **entre Windows 3.1 (1992) y Windows 11 (2021) pasaron casi 30 años**, y Microsoft sacó 11 versiones principales de su sistema operativo —una cada dos años y medio, más o menos—. 
 
 | Versión | Fecha |
-|---|---|
+| --- | --- |
 | Windows 3.1 | 6 abril 1992 |
 | Windows 95 | 24 agosto 1995 |
 | Windows 98 | 25 junio 1998 |
