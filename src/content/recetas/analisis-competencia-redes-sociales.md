@@ -1,8 +1,8 @@
 ---
 title: 'Análisis de competencia en redes sociales: automatizado, no manual'
-draft: true
+draft: false
 description: Dejar de copiar métricas a mano de Instagram. Con un scraper, un flujo automatizado y una IA que interpreta los datos, el análisis se repite solo cada semana.
-pubDate: 2026-09-02
+pubDate: 2026-09-09
 etiqueta: Automatización
 ---
 
@@ -11,7 +11,7 @@ Mirar las cuentas de Instagram de la competencia a mano —contar likes, apuntar
 ## Los ingredientes
 
 - Un scraper de redes sociales (hay varios servicios especializados en esto)
-- Una herramienta de automatización que encadene los pasos sin depender de que tú los ejecutes a mano
+- Una herramienta de automatización que encadene los pasos sin depender de que tú los ejecutes a mano (estamos en la era de las automatizaciones)
 - Un modelo de IA con buen razonamiento, para interpretar los datos en bruto y no solo mostrarlos
 
 ## La lógica del flujo
@@ -20,12 +20,12 @@ Mirar las cuentas de Instagram de la competencia a mano —contar likes, apuntar
 
 **2. Recoge los datos** — de las cuentas que quieras vigilar: frecuencia de publicación, formato, engagement, hashtags.
 
-**3. Filtra el ruido** — de todo lo que trae un scraper (comentarios, avatares, URLs de imágenes), solo importa un puñado de campos. El resto sobra.
+**3. Filtra el ruido** — de todo lo que trae un scraper (comentarios, avatares, URLs de imágenes), solo importa un puñado de campos. El resto sobra y gasta tokens.
 
-**4. La IA interpreta, no solo resume** — ¿qué formato les funciona mejor? ¿A qué hora publican? ¿Qué engagement rate mueven de media? ¿Hay algún patrón de hashtags que se repita en sus posts más exitosos? Eso es lo que de verdad quieres saber, no una tabla de números sueltos.
+**4. La IA interpreta, no solo resume** — ¿qué formato les funciona mejor? ¿A qué hora publican? ¿Hay algún patrón de hashtags que se repita en sus posts más exitosos? Eso es lo que de verdad quieres saber, no una tabla de números sueltos que nadie interpretará.
 
 **5. El informe llega solo** — a tu email, sin que tengas que abrir Instagram ni una vez.
 
----
+***
 
 El resultado: pasar de perder una tarde entera copiando métricas a mano, a recibir un análisis ya interpretado cada lunes por la mañana. La parte técnica —qué herramientas concretas, cómo conectarlas, cómo evitar que el coste se dispare— depende de cada caso. Si quieres montarlo para el tuyo, puedes consultarme [aquí](/contacto).
