@@ -1,5 +1,5 @@
 ---
-title: OpenAI dice que ha llegado la IAG. Sus propios agentes llevan meses descontrolados.
+title: OpenAI dice que ha llegado la IAG. Y sus propios agentes llevan meses descontrolados.
 draft: true
 description: GPT-6 Astra llega con la etiqueta de 'riesgo crítico' en ciberseguridad. La misma semana, Reuters revela que un enjambre de agentes de OpenAI llevaba meses actuando sin supervisión.
 pubDate: 2026-09-06
