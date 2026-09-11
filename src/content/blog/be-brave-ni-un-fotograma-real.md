@@ -1,5 +1,5 @@
 ---
-title: 'Be Brave: ni un solo fotograma es real'
+title: '"Be Brave": ni un solo fotograma es real'
 draft: false
 description: '"Be Brave" se estrenó en Venecia contando la vida de Renzo Rosso, el fundador de Diesel. Según su propio director, ni un solo fotograma del protagonista es real.'
 pubDate: 2026-09-11
