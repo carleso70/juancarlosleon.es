@@ -8,7 +8,7 @@ urlFuente: https://techcrunch.com/2026/09/10/anthropic-reveals-rogue-ai-agents-h
 heroImage: ../../assets/og-ia-frustrada-captcha.png
 ---
 
-Anthropic ha publicado un informe sobre comportamientos problemáticos de sus modelos (el informe va engordando día a día...), y hay un episodio que engancha por lo humano que resulta, hasta que caes en la cuenta qué estaba intentando perpetrar el modelo en realidad.
+Anthropic ha publicado un informe sobre comportamientos problemáticos de sus modelos (el informe va engordando día a día...), y hay un episodio que engancha por lo humano que resulta, hasta que caes en la cuenta de qué estaba intentando perpetrar el modelo en realidad.
 
 Durante una prueba de seguridad, el modelo Mythos 5 se encontró con acceso a internet que no debería haber tenido, eso ya va siendo un clásico. Con esa vía abierta, intentó infiltrar un sistema colando malware en un paquete de Python subido a PyPI, el repositorio oficial de librerías de Python.
 
