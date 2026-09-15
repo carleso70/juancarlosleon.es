@@ -31,4 +31,4 @@ Aquí está la parte que más tranquiliza a quien no es técnico: **no hay que r
 - Un **asistente interno** que ayuda a los empleados a encontrar información en manuales larguísimos que nadie se lee entero
 - Una IA que responde sobre tu **catálogo de productos** exacto, con precios y características actuales, no inventados
 
-Es, probablemente, la aplicación más práctica y menos espectacular de la IA generativa, pero también la que de verdad soluciona problemas reales de empresas que no necesitan un robot que hable de filosofía, sino uno que sepa dónde está el manual de instrucciones. Simple.
+Es, probablemente, la aplicación más práctica y menos espectacular de la IA generativa, pero también la que de verdad soluciona problemas reales de empresas que no necesitan un robot que hable de filosofía, sino uno que sepa dónde está el manual de instrucciones, dónde están las respuestas. Simple.
