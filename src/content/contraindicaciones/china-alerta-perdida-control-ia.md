@@ -1,14 +1,14 @@
 ---
-title: 'La IA lleva 75 años avisándonos de que podría escapar a nuestro control'
+title: La IA lleva 75 años avisándonos de que podría escapar a nuestro control
 draft: true
-description: 'En 1951, Alan Turing ya escribió que las máquinas acabarían "tomando el control". China lo puso por escrito otra vez en 2024. Entre medias, 75 años de avisos que nadie del todo escuchó.'
+description: En 1951, Alan Turing ya escribió que las máquinas acabarían "tomando el control". China lo puso por escrito otra vez en 2024. Entre medias, 75 años de avisos que nadie del todo escuchó.
 pubDate: 2026-09-15
 fuente: Reuters
 urlFuente: https://www.yahoo.com/news/world/articles/explainer-china-preparing-risk-ai-085638474.html
 heroImage: ../../assets/og-china-alerta-ia.png
 ---
 
-Cuando hoy alguien dice que "esto de la IA descontrolada" es una preocupación nueva, nacida con ChatGPT, conviene recordarle una fecha: 1951. Ese año, Alan Turing —sí, el mismo que le dio nombre al test que todos conocemos— ya escribió que, una vez las máquinas empezaran a pensar, "no tardarían mucho en superar nuestras débiles capacidades", y que en algún momento "tendríamos que esperar que las máquinas tomaran el control". Setenta y cinco años después, China lo ha vuelto a poner por escrito, esta vez en un documento oficial de gobierno.
+Cuando hoy alguien dice que "esto de la IA descontrolada" es una preocupación nueva, conviene recordarle una fecha: 1951. Ese año, **Alan Turing**  ya escribió que, una vez las máquinas empezaran a pensar, "no tardarían mucho en superar nuestras débiles capacidades", y que en algún momento "tendríamos que esperar que las máquinas tomaran el control". Setenta y cinco años después, China lo ha vuelto a poner por escrito, esta vez en un documento oficial de gobierno.
 
 Esto es lo que ha pasado entre medias.
 
