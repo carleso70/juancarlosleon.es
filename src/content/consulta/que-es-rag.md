@@ -2,7 +2,7 @@
 title: 'RAG: cómo hacer que una IA conozca tu negocio sin entrenarla'
 draft: false
 description: Le preguntas a ChatGPT por la política de tu empresa y no tiene ni idea. RAG es la técnica que soluciona eso, sin gastar una fortuna reentrenando nada.
-pubDate: 2026-09-14
+pubDate: 2026-09-15
 updatedDate: ''
 heroImage: ../../assets/og-que-es-rag.png
 ---
