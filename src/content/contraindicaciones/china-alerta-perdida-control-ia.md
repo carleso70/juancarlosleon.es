@@ -1,7 +1,7 @@
 ---
 title: China lleva desde 2024 avisando de que podríamos perder el control de la IA
-draft: false
-description: 'En septiembre de 2024, China fue de los primeros gobiernos en poner por escrito, en un documento oficial, que una IA futura podría replicarse, desarrollar autoconciencia y buscar poder por su cuenta.'
+draft: true
+description: En septiembre de 2024, China fue de los primeros gobiernos en poner por escrito, en un documento oficial, que una IA futura podría replicarse, desarrollar autoconciencia y buscar poder por su cuenta.
 pubDate: 2026-09-15
 fuente: Reuters
 urlFuente: https://www.yahoo.com/news/world/articles/explainer-china-preparing-risk-ai-085638474.html
