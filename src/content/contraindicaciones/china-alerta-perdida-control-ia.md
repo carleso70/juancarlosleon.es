@@ -20,8 +20,10 @@ Esto es lo que ha pasado entre medias. Y no es poco.
 - **1951 — Alan Turing**: en una conferencia titulada "Intelligent Machinery, A Heretical Theory", planteó que las máquinas podrían superar intelectualmente al ser humano y, llegado ese punto, "tomar el control". Es, probablemente, el punto de partida más nítido de todo este debate.
 - **1965 — I. J. Good**: matemático que trabajó con Turing, formuló la idea de la "explosión de inteligencia": una máquina ultrainteligente capaz de diseñar máquinas aún mejores, en una espiral que dejaría muy atrás la inteligencia humana. Llegó a escribir que esa primera máquina ultrainteligente sería "el último invento que la humanidad necesitará hacer jamás", siempre que fuera lo bastante dócil como para explicarnos cómo mantenerla bajo control.
 - **2023 — Future of Life Institute**: la primera gran llamada pública contemporánea a frenar el desarrollo de sistemas de IA avanzados, firmada por miles de investigadores e ingenieros, entre ellos nombres muy conocidos del sector.
+- **2024** — **China** (CAC/TC260): el primer gobierno en poner sobre papel oficial que no se podía descartar que una IA futura obtuviera recursos de forma autónoma, se replicara, desarrollara autoconciencia y buscara poder, compitiendo con los humanos por el control.
+- **2025** — **China**: añadió la posibilidad de un salto repentino e inesperadamente grande de inteligencia, antes incluso de que la IA intentara replicarse o buscar poder.
 
-Durante 160 años, este tipo de avisos venían principalmente de matemáticos, filósofos y escritores de ciencia ficción — voces respetadas, pero sin poder real de decisión sobre la tecnología que estaban señalando. Eso ha cambiado esta misma semana.
+Durante 160 años, este tipo de avisos venían principalmente de matemáticos, filósofos y escritores de ciencia ficción — voces respetadas, pero sin poder real de decisión sobre la tecnología que estaban señalando. En 2024 empezó a cambiar: la alerta provenía de un gobierno con capacidad regulatoria real. Y esta misma semana ha cambiado del todo.
 
 **Septiembre de 2026: cuando los que construyen la IA empiezan a avisar de ella**
 
