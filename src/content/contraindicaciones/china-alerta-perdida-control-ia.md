@@ -23,6 +23,8 @@ Esto es lo que ha pasado entre medias. Y no es poco.
 - **2024** — **China** (CAC/TC260): el primer gobierno en poner sobre papel oficial que no se podía descartar que una IA futura obtuviera recursos de forma autónoma, se replicara, desarrollara autoconciencia y buscara poder, compitiendo con los humanos por el control.
 - **2025** — **China**: añadió la posibilidad de un salto repentino e inesperadamente grande de inteligencia, antes incluso de que la IA intentara replicarse o buscar poder.
 
+![Cronología de avisos sobre pérdida de control de la IA, de Samuel Butler en 1863 a Amodei, Altman y Musk en 2026](/images/cronologia-ia-control.png)
+
 Durante 160 años, este tipo de avisos venían principalmente de matemáticos, filósofos y escritores de ciencia ficción — voces respetadas, pero sin poder real de decisión sobre la tecnología que estaban señalando. En 2024 empezó a cambiar: la alerta provenía de un gobierno con capacidad regulatoria real. Y esta misma semana ha cambiado del todo.
 
 **Septiembre de 2026: cuando los que construyen la IA empiezan a avisar de ella**
