@@ -2,7 +2,7 @@
 title: La IA lleva 75 años avisándonos de que podría escapar a nuestro control
 draft: false
 description: De Alan Turing en 1951 a la dimisión, esta misma semana, de un investigador de Anthropic que dice que su empresa "juega con nuestras vidas". El aviso no es nuevo, lo nuevo es quién lo está firmando ahora.
-pubDate: 2026-09-15
+pubDate: 2026-09-16
 fuente: Reuters
 urlFuente: https://www.washingtonpost.com/technology/2026/09/12/anthropic-ceo-dario-amodei-calls-ai-industry-slow-down/
 heroImage: ../../assets/og-china-alerta-ia.png
