@@ -8,7 +8,7 @@ urlFuente: https://www.washingtonpost.com/technology/2026/09/12/anthropic-ceo-da
 heroImage: ../../assets/og-china-alerta-ia.png
 ---
 
-Cuando alguien dice que "esto de la IA descontrolada" es una preocupación nueva, conviene recordarle una fecha: 1951. Ese año, **Alan Turing** (maravillosa la encarnación de Benedict Cumberbatch en _The Imitation Game_) ya escribió que, una vez las máquinas empezaran a pensar, "no tardarían mucho en superar nuestras débiles capacidades", y que en algún momento "tendríamos que esperar que las máquinas tomaran el control". Setenta y cinco años después, esta misma semana, un investigador ha dimitido de Anthropic diciendo que su propia empresa "juega con nuestras vidas".
+Cuando alguien dice que "esto de la IA descontrolada" es una preocupación nueva, conviene recordarle una fecha: 1951. Ese año, **Alan Turing** (maravillosa la encarnación de Benedict Cumberbatch en _The Imitation Game_) ya escribió que, una vez las máquinas empezaran a pensar, "no tardarían mucho en superar nuestras débiles capacidades", y que en algún momento "tendríamos que esperar que las máquinas tomaran el control". Setenta y cinco años después, esta misma semana, un investigador ha dimitido de Anthropic diciendo que su propia empresa "juega con nuestras vidas". Parece que la espera toca a su fin...
 
 Esto es lo que ha pasado entre medias. Y no es poco.
 
