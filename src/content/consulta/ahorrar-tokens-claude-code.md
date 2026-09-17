@@ -1,23 +1,23 @@
 ---
-title: '10 hábitos para no quedarte sin tokens a media tarea con Claude Code'
-description: 'Si usas Claude Code y notas que se ralentiza o se te "llena" la conversación a media tarea, hay hábitos sencillos que alargan mucho la vida útil de cada sesión.'
+title: 10 hábitos para no quedarte sin tokens a media tarea con Claude Code
+draft: true
+description: Si usas Claude Code y notas que se ralentiza o se te "llena" la conversación a media tarea, hay hábitos sencillos que alargan mucho la vida útil de cada sesión.
 pubDate: 2026-09-17
 updatedDate: ''
 heroImage: ../../assets/og-ahorrar-tokens-claude-code.png
-draft: true
 ---
 
-Si trabajas con Claude Code de forma habitual, seguro que te ha pasado: empiezas una sesión fluida y, un par de horas después, todo va más lento, las respuestas tardan más y en algún momento aparece el aviso de que la conversación se va a "compactar". Eso pasa porque cada sesión tiene un espacio limitado de contexto (los "tokens"), y hay hábitos muy simples que hacen que ese espacio te dure mucho más.
+Si trabajas con Claude Code de forma habitual, seguro que te ha pasado: empiezas una sesión y, un par de horas después, todo va más lento, las respuestas tardan más y en algún momento aparece el aviso de que la conversación se va a "compactar", todo un clásico. Eso pasa porque cada sesión tiene un espacio limitado de contexto (los "tokens"), y hay mecanismos muy simples que hacen que ese espacio te dure mucho más.
 
-Aquí van diez, de más a menos evidentes. Una aclaración antes de empezar: esto está pensado para gente que usa **Claude Code** (la herramienta de terminal para programar con IA), no el chat normal de Claude en la web. Dicho esto, si usas la app de escritorio de Claude en modo chat, dos de los diez consejos —desactivar conectores que no uses y organizar instrucciones en Skills— te sirven igual, porque ambas cosas también consumen contexto ahí. El resto (los comandos `/context`, `/clear`, `/compact`, los hooks, los subagentes o el modo de planificación) son exclusivos de Claude Code.
+Aquí van diez, de más a menos evidentes. Una aclaración antes de empezar: esto está pensado para gente que usa **Claude Code** (la herramienta de terminal para programar con IA), no el chat normal de Claude en la web. Dicho esto, si usas la app de escritorio de Claude en modo chat, dos de los diez consejos —desactivar conectores que no uses y organizar instrucciones en Skills— te sirven igual, porque ambas cosas también consumen contexto en esa modalidad. El resto (los comandos `/context`, `/clear`, `/compact`, los hooks, los subagentes o el modo de planificación) son exclusivos de Claude Code.
 
 **1. Mira dónde se te va el espacio**
 
-El comando `/context` te muestra un desglose: cuánto ocupa el sistema, las herramientas activas, los mensajes de la conversación... Antes de optimizar nada, conviene saber dónde está el problema real. En mi caso, por ejemplo, descubrí que un 8% del contexto se lo comían herramientas conectadas (Gmail, Drive, Spotify...) que ni siquiera estaba usando en esa sesión.
+El comando `/context` te muestra un desglose: cuánto ocupa el sistema, las herramientas activas, los mensajes de la conversación... Pero antes de optimizar nada, conviene saber dónde está el problema real. En mi caso, por ejemplo, descubrí que un 8% del contexto se lo comían herramientas conectadas (Gmail, Drive, Spotify...) que ni siquiera estaba usando en esa sesión. Ojo ahí.
 
 **2. Limpia entre tareas distintas**
 
-El comando `/clear` borra la conversación y empieza de cero. Si saltas de un proyecto a otro completamente distinto, usarlo evita arrastrar contexto que ya no pinta nada — cada turno de conversación reenvía todo lo anterior, así que cuanto más larga la historia, más caro (y lento) cada mensaje nuevo.
+El comando `/clear` borra la conversación y empieza de cero. Si saltas de un proyecto a otro completamente distinto, usarlo evita arrastrar contexto que ya no pinta nada. Cada turno de conversación reenvía todo lo anterior, así que cuanto más larga la historia, más caro (y lento) cada mensaje nuevo.
 
 **3. Compacta con instrucciones claras**
 
