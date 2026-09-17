@@ -9,7 +9,7 @@ draft: true
 
 Si trabajas con Claude Code de forma habitual, seguro que te ha pasado: empiezas una sesión fluida y, un par de horas después, todo va más lento, las respuestas tardan más y en algún momento aparece el aviso de que la conversación se va a "compactar". Eso pasa porque cada sesión tiene un espacio limitado de contexto (los "tokens"), y hay hábitos muy simples que hacen que ese espacio te dure mucho más.
 
-Aquí van diez, de más a menos evidentes.
+Aquí van diez, de más a menos evidentes. Una aclaración antes de empezar: esto está pensado para gente que usa **Claude Code** (la herramienta de terminal para programar con IA), no el chat normal de Claude en la web. Dicho esto, si usas la app de escritorio de Claude en modo chat, dos de los diez consejos —desactivar conectores que no uses y organizar instrucciones en Skills— te sirven igual, porque ambas cosas también consumen contexto ahí. El resto (los comandos `/context`, `/clear`, `/compact`, los hooks, los subagentes o el modo de planificación) son exclusivos de Claude Code.
 
 **1. Mira dónde se te va el espacio**
 
