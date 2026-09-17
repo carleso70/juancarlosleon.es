@@ -1,6 +1,6 @@
 ---
 title: 10 hábitos para no quedarte sin tokens a media tarea con Claude Code
-draft: true
+draft: false
 description: Si usas Claude Code y notas que se ralentiza o se te "llena" la conversación a media tarea, hay hábitos sencillos que alargan mucho la vida útil de cada sesión.
 pubDate: 2026-09-17
 updatedDate: ''
@@ -21,11 +21,11 @@ El comando `/clear` borra la conversación y empieza de cero. Si saltas de un pr
 
 **3. Compacta con instrucciones claras**
 
-`/compact` resume la conversación para liberar espacio, pero si le dices qué es importante conservar, el resumen es mucho más útil que uno genérico.
+`/compact` resume la conversación para liberar espacio, pero si le dices qué es importante conservar (focaliza), el resumen es mucho más útil que uno genérico.
 
 **4. Usa el modelo justo para la tarea**
 
-Para la mayoría de tareas de programación del día a día, un modelo estándar (Sonnet) rinde de sobra. Reserva los modelos más potentes (Opus) para decisiones de arquitectura complejas — cuestan más tokens y no siempre hace falta esa potencia.
+Para la mayoría de tareas de programación del día a día, un modelo estándar (Sonnet) rinde de sobra. Reserva los modelos más potentes (Opus) para decisiones de arquitectura complejas, cuestan más tokens y no siempre hace falta esa potencia. Incluso el Haiku para tareas textuales puede ser solvente.
 
 **5. Desactiva los conectores que no uses**
 
@@ -33,22 +33,24 @@ Aquí está, para mí, el ahorro más grande y menos evidente: cada servidor MCP
 
 **6. Filtra la salida antes de que la vea la IA**
 
-Si un comando genera mucho texto (logs larguísimos, por ejemplo), se puede preprocesar esa salida antes de que llegue a la conversación, para no gastar tokens en ruido que no aporta nada.
+Si un comando genera mucho texto (logs larguísimos, por ejemplo), se puede preprocesar esa salida antes de que llegue a la conversación, para no gastar tokens en ruido que no aporta nada. Por ejemplo, un hook que en vez de devolver un log completo, solo pase las líneas que contienen "fail" o "error", y como máximo las últimas 20. Se configura una vez en un archivo de ajustes (settings.json en Claude Code), y a partir de ahí, cada vez que se ejecuta ese tipo de comando, el filtro se aplica solo, sin que tengas que acordarte.
 
 **7. Mueve instrucciones a "Skills" en vez de cargarlas siempre**
 
-En lugar de meter toda la configuración de un proyecto en un archivo que se carga al empezar cada sesión, se pueden organizar como módulos que se activan solo cuando hacen falta.
+En lugar de meter toda la configuración de un proyecto en un archivo que se carga al empezar cada sesión, se pueden organizar como módulos que se activan solo cuando hacen falta: los skills o habilidades.
 
 **8. Baja el "esfuerzo de razonamiento" en tareas simples**
 
-Cuando la tarea es sencilla, pedir menos "pensamiento" explícito al modelo (hay un ajuste para esto) ahorra tokens que no aportan nada a una respuesta directa.
+Cuando la tarea es sencilla, pedir menos "pensamiento" explícito al modelo (hay un ajuste para esto) ahorra tokens que no aportan nada a una respuesta directa. En Claude Code se controla con el comando /effort, directamente en la conversación. Por ejemplo:
+
+/effort low
 
 **9. Delega las tareas ruidosas**
 
-Ejecutar pruebas, por ejemplo, puede generar muchísimo texto de salida. Delegarlo a un agente auxiliar que solo devuelva el resumen, en vez de que todo ese ruido entre en la conversación principal, mantiene el contexto limpio.
+Ejecutar pruebas, por ejemplo, puede generar muchísimo texto de salida. Delegarlo a un agente auxiliar que solo devuelva el resumen, en vez de que todo ese ruido entre en la conversación principal, mantiene el contexto limpio.  En Claude Code se invoca con la herramienta "Agent" (o pidiéndolo directamente: "usa un subagente para..."), y es especialmente útil para tareas que generan mucho texto pero cuyo resultado final es corto: tests, búsquedas amplias en el código, builds largos.
 
 **10. Planifica antes de lanzarte a programar**
 
 Usar un modo de planificación antes de escribir código evita el peor gasto de tokens de todos: hacer algo mal desde el principio y tener que rehacerlo entero.
 
-Ninguno de estos hábitos exige nada técnico complicado — son, sobre todo, cuestión de acordarse de usarlos. Y el primero, `/context`, es el que te dice si merece la pena aplicar los demás o si tu caso concreto va sobrado de espacio.
+Ninguno de estos hábitos exige nada técnico complicado. Es, sobre todo, cuestión de acordarse de usarlos. Y **el primero, `/context`, es el que te dice si merece la pena aplicar los demás o si tu caso concreto va sobrado de espacio**.
