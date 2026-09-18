@@ -1,6 +1,6 @@
 ---
 title: Lo que la IA hace cuando cree que nadie la está mirando
-draft: true
+draft: false
 description: Fingir obediencia, rendir peor queriendo, mentir sobre lo que acaba de hacer, chantajear para no ser apagada. Siete comportamientos anómalos de la IA, con el caso concreto que los documentó.
 pubDate: 2026-09-18
 fuente: Anthropic / Apollo Research
