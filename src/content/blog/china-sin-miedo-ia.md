@@ -1,15 +1,15 @@
 ---
 title: China no le tiene miedo a la IA. Estados Unidos, sí.
-draft: true
+draft: false
 description: En China el debate público sobre si esto puede acabar mal apenas existe. La brecha entre USA y China no es de tecnología, es de confianza en quién la vigila.
-pubDate: 2026-09-18
+pubDate: 2026-09-22
 updatedDate: ''
 heroImage: ''
 fuente: CNN
 urlFuente: https://edition.cnn.com/2026/09/17/tech/china-ai-debate-intl-hnk
 ---
 
-Mientras en Estados Unidos los propios jefes de los laboratorios de IA firman cartas advirtiendo de riesgos existenciales, **en China el debate público sobre si esto puede acabar mal apenas existe**. Ni una furgoneta con una pantalla en Times Square, ni manifestantes frente a un centro de datos, ni hilos virales de "esto nos va a matar a todos". No se flipan.
+Mientras en Estados Unidos los propios jefes de los laboratorios de IA firman cartas advirtiendo de riesgos existenciales, **en China el debate público sobre si esto puede acabar mal apenas existe**. Ni una furgoneta con una pantalla en Times Square, ni manifestantes encrespados frente a un centro de datos, ni hilos virales apocalípticos de "esto nos va a matar a todos". No se flipan.
 
 Los números lo confirman:
 
