@@ -7,7 +7,7 @@ updatedDate: ''
 heroImage: ''
 ---
 
-Llevo tres libros y decenas de artículos dedicados a rebuscar en nombres de canciones —quién le puso título a qué, y por qué—, así que cuando me fijé —añois ha— en que WordPress bautiza sus versiones con nombres de músicos de jazz no pude evitar tirar del hilo, y hoy rehago la madeja. Resulta que media industria tech tiene su propio anecdotario onomástico, solo que en vez de canciones son líneas de código.
+Llevo tres libros y decenas de artículos dedicados a rebuscar en nombres de canciones —quién le puso título a qué, y por qué—, así que cuando me fijé —años ha— en que WordPress bautiza sus versiones con nombres de músicos de jazz no pude evitar tirar del hilo, y hoy rehago la madeja. Resulta que media industria tech tiene su propio anecdotario onomástico, solo que en vez de canciones son líneas de código.
 
 Algunos ejemplos, con su lógica interna:
 
