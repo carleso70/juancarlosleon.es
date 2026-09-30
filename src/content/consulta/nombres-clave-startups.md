@@ -1,18 +1,18 @@
 ---
 title: 'Nombres en clave: cómo bautiza sus versiones la industria tech'
 draft: true
-description: 'De WordPress y el jazz a Android y los postres. Un repaso a las temáticas que usan (o usaban) startups y tecnológicas para nombrar sus lanzamientos, y lo que dicen de cada empresa.'
-pubDate: '2026-09-30'
+description: De WordPress y el jazz a Android y los postres. Un repaso a las temáticas que usan (o usaban) startups y tecnológicas para nombrar sus lanzamientos, y lo que dicen de cada empresa.
+pubDate: 2026-09-30
 updatedDate: ''
 heroImage: ''
 ---
 
-Llevo tres libros dedicados a rebuscar en nombres de canciones —quién le puso título a qué, y por qué—, así que cuando me fijé en que WordPress bautiza sus versiones con nombres de músicos de jazz no pude evitar tirar del hilo. Resulta que media industria tech tiene su propio anecdotario onomástico, solo que en vez de canciones son líneas de código.
+Llevo tres libros y decenas de artículos dedicados a rebuscar en nombres de canciones —quién le puso título a qué, y por qué—, así que cuando me fijé —añois ha— en que WordPress bautiza sus versiones con nombres de músicos de jazz no pude evitar tirar del hilo, y hoy rehago la madeja. Resulta que media industria tech tiene su propio anecdotario onomástico, solo que en vez de canciones son líneas de código.
 
 Algunos ejemplos, con su lógica interna:
 
 | Empresa / proyecto | Temática | Ejemplos |
-|---|---|---|
+| --- | --- | --- |
 | WordPress | Músicos de jazz | Coltrane, Fitzgerald, Davis, Cachao |
 | Ubuntu | Animal + adjetivo aliterado | Warty Warthog, Noble Numbat |
 | Debian | Personajes de Toy Story | Buzz, Woody, Bookworm, Trixie |
