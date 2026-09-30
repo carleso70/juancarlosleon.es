@@ -20,12 +20,13 @@ Algunos ejemplos, con su lógica interna:
 | Android | Postres (hasta 2019) | Cupcake, KitKat, Oreo, Pie |
 | Google Gemini | Constelación/programa espacial | Gemini (guiño al programa Apollo-Gemini de la NASA) |
 | Claude (Anthropic) | Formas poéticas | Haiku, Sonnet, Opus |
+| GPT-6 (OpenAI) | Cuerpos celestes, por capacidad | Astra (insignia), Sol (código), Luna (bajo coste) |
 
 WordPress es de los casos más curiosos: cada versión mayor lleva el nombre de un músico de jazz, elegido por orden alfabético y a menudo relacionado con la ciudad donde vive quien lidera esa release. No es simbolismo vacío —Matt Mullenweg, su fundador, es un saxofonista aficionado que toca en directo—. El nombre en clave sale de un gusto personal, no de un comité de marca.
 
 Debian tira de Toy Story porque su fundador, allá por 1996, tenía un hijo pequeño obsesionado con la película. La rama "inestable" del proyecto se llama permanentemente **Sid**, en honor al vecino que rompía los juguetes en la peli. Es la broma interna más longeva del software libre: todo lo que pasa por Sid es, por definición, terreno inestable.
 
-Google, con Gemini, hizo lo contrario a esconder el simbolismo: quiso que el nombre dijera en voz alta que era la fusión de dos equipos (Google Brain y DeepMind) bajo un mismo proyecto —los gemelos de la constelación—, con un guiño extra a la carrera espacial. Y Anthropic bautizó sus modelos con formas poéticas —Haiku, Sonnet, Opus— para describir sin decirlo el tamaño y el propósito de cada uno: rapidez frente a profundidad, boceto frente a obra completa.
+Google, con Gemini, hizo lo contrario a esconder el simbolismo: quiso que el nombre dijera en voz alta que era la fusión de dos equipos (Google Brain y DeepMind) bajo un mismo proyecto —los gemelos de la constelación—, con un guiño extra a la carrera espacial. Anthropic bautizó sus modelos con formas poéticas —Haiku, Sonnet, Opus— para describir sin decirlo el tamaño y el propósito de cada uno: rapidez frente a profundidad, boceto frente a obra completa. Y OpenAI ha hecho algo parecido con GPT-6: Astra, Sol y Luna no son nombres sueltos, son una jerarquía disfrazada de cosmos —el más grande y potente lleva el nombre más grandilocuente (las estrellas), y el más barato y rápido, el más modesto (la luna)—. Mismo truco que Anthropic, distinto imaginario.
 
 Lo que tienen en común todos estos casos, más allá de la anécdota, es que el nombre en clave rara vez es aleatorio. Dice algo de quién decide, qué valora la empresa y, a veces, hasta qué banda sonora suena en su oficina. Android abandonó los postres cuando el número de versión empezó a importar más que la broma. Apple cambió de felinos a paisajes de California cuando se quedó sin grandes gatos que nombrar y, de paso, ató su sistema operativo a una identidad geográfica bien reconocible. Ningún nombre en clave sobrevive por capricho: sobrevive mientras sigue contando la historia que la empresa quiere contar.
 
