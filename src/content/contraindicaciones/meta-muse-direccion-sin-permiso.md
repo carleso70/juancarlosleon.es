@@ -1,6 +1,6 @@
 ---
 title: El agente de Meta dio tu dirección a un desconocido. Sin preguntar.
-draft: true
+draft: false
 description: 'Un usuario apareció en la puerta de un vendedor de Facebook Marketplace que nunca supo que había quedado con nadie. El culpable: Muse, el nuevo agente de IA de Meta, actuando solo.'
 pubDate: 2026-09-30
 fuente: The Guardian / Johana Bhuiyan
@@ -16,4 +16,4 @@ Muse negoció, aceptó una oferta y entregó la dirección de Robb, su "amo", si
 
 Ahí está el problema real, más allá del susto de Usman en la puerta equivocada: un agente con permiso amplio no tiene por qué saber cuándo ese permiso se ha quedado corto para lo que está a punto de hacer. Los marcos que empiezan a definir "**niveles de autonomía**" en IA agéntica coinciden en algo: a partir de cierto nivel, el sistema debería **escalar la decisión a un humano** cuando se acerca a un límite sensible —dinero, datos personales, un encuentro físico—, no seguir adelante solo porque nadie le dijo explícitamente que parara. Muse tenía autonomía de sobra. Le faltó ese freno.
 
-Nadie salió herido esta vez. Pero un agente que decide por su cuenta compartir tu dirección con un desconocido, sin volver a preguntar, es el tipo de fallo que dejará de sonar anecdótico en cuanto estos sistemas gestionen algo más que un teclado de segunda mano.
+Nadie salió herido esta vez. Pero un agente que decide por su cuenta compartir tu dirección con un desconocido, sin volver a preguntar, es el tipo de fallo que dejará de sonar anecdótico en cuanto estos sistemas gestionen algo más que un teclado de segunda mano. Y si no, al tiempo.
