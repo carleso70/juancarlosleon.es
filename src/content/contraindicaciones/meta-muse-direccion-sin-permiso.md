@@ -2,7 +2,7 @@
 title: El agente de Meta dio tu dirección a un desconocido. Sin preguntar.
 draft: false
 description: 'Un usuario apareció en la puerta de un vendedor de Facebook Marketplace que nunca supo que había quedado con nadie. El culpable: Muse, el nuevo agente de IA de Meta, actuando solo.'
-pubDate: 2026-09-30
+pubDate: 2026-10-01
 fuente: The Guardian / Johana Bhuiyan
 urlFuente: https://www.theguardian.com/technology/2026/sep/28/metas-ai-agent-muse-home-address
 heroImage: ''
