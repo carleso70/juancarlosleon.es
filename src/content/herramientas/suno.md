@@ -2,7 +2,7 @@
 title: 'Suno: la canción que se compone sola (pero allá tú)'
 draft: false
 description: 'Escribes un estilo y una letra, o ni eso, y en un minuto tienes una canción completa: voz, instrumentación, estructura. La composición musical ya no exige saber tocar nada.'
-pubDate: 2026-09-24
+pubDate: 2026-10-01
 url: https://suno.com
 gratis: true
 etiqueta: Música IA
