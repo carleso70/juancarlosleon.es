@@ -1,11 +1,11 @@
 ---
-title: 'Suno: la canción que se compone sola'
-draft: true
+title: 'Suno: la canción que se compone sola (pero allá tú)'
+draft: false
 description: 'Escribes un estilo y una letra, o ni eso, y en un minuto tienes una canción completa: voz, instrumentación, estructura. La composición musical ya no exige saber tocar nada.'
-pubDate: '2026-09-24'
-url: 'https://suno.com'
+pubDate: 2026-09-24
+url: https://suno.com
 gratis: true
-etiqueta: 'Música IA'
+etiqueta: Música IA
 ---
 
 Llevo años escribiendo sobre canciones ajenas —quién las compuso, por qué, a quién iban dirigidas—. Nunca pensé que tendría que escribir sobre una herramienta capaz de fabricarlas de la nada. Le describes un estilo ("balada de soul con órgano Hammond y voz rota") o le pegas directamente una letra, y en menos de un minuto Suno te devuelve una canción entera. Con estrofa, estribillo, instrumentación y una voz que canta afinada. Ninguna guitarra de por medio.
@@ -24,8 +24,8 @@ Sí, con un número limitado de generaciones al día y las canciones publicadas 
 
 **Por dónde empezar**
 
-Entra en suno.com, describe lo que quieres oír y dale al botón. La primera vez sorprende. La segunda, un poco menos. Y a la tercera empiezas a hacerte la pregunta incómoda: si la industria discográfica lleva un siglo peleándose por saber quién es el autor de una canción, ¿qué hacemos ahora con las que no ha escrito nadie? La industria ya lo está discutiendo a golpe de demanda y acuerdo de licencia. Nosotros, de momento, solo podemos apretar "generar" y escuchar.
+Entra en suno.com, describe lo que quieres oír y dale al botón. La primera vez sorprende. La segunda, un poco menos. Y a la tercera empiezas a hacerte la pregunta incómoda: si la industria discográfica lleva un siglo peleándose por saber quién es el autor de una canción, ¿qué hacemos ahora con las que no ha escrito nadie? La industria ya lo está discutiendo a golpe de demanda y acuerdo de licencia. Nosotros, de momento, solo podemos apretar "generar" y escuchar. Y tirarnos de los pelos, la mayoría de las veces.
 
----
+***
 
 <a href="https://suno.com" target="_blank" rel="noopener noreferrer" class="btn-web">Visitar Suno →</a>
