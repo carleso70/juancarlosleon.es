@@ -1,6 +1,6 @@
 ---
 title: La industria de la IA sabía de estos riesgos hace 25 años. Siguió adelante igual
-draft: true
+draft: false
 description: 'No fue Turing el único aviso lejano: gente dentro de la propia industria de la IA ya conocía el riesgo de extinción hace un cuarto de siglo. Y decidió seguir adelante.'
 pubDate: 2026-10-02
 fuente: The Guardian
