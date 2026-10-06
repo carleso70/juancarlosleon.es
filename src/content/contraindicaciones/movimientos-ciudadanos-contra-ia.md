@@ -1,7 +1,7 @@
 ---
 title: 'Pull the plug: el miedo a la IA ya tiene pancarta'
 draft: true
-description: 'Tras el escape de los agentes de OpenAI y la dimisión de Coxon, los grupos antiIA se disparan. Algunos ya han pasado de la petición online a reventar cenas de ejecutivos.'
+description: 'Tras el escape de los agentes de OpenAI y la dimisión de Coxon, los grupos antiIA se disparan: de las pancartas a los centros de datos, y de ahí a la violencia.'
 pubDate: 2026-10-06
 fuente: The Guardian
 urlFuente: https://www.inkl.com/news/pull-the-plug-protesters-resort-to-direct-action-against-ai-firms
@@ -28,8 +28,20 @@ Quien más está ayudando a reclutar, según el propio artículo, es Donald Trum
 
 El movimiento cruza edades e ideologías: los universitarios se apuntan porque temen por su futuro laboral; los conservacionistas veteranos, por los centros de datos que se comen el paisaje. Cada uno con su miedo, todos con la misma pancarta.
 
+**El nuevo campo de batalla: los centros de datos**
+
+En Escocia, donde hay al menos 21 centros de datos en proyecto, Action to Protect Rural Scotland, una organización centenaria más conocida por defender el cinturón verde, ha pasado de 400 a 4.000 simpatizantes. "Nunca había visto una energía de base como esta", dice su directora, Kat Jones, que la describe con cariño como "una campaña de frikis": gente que se pone a estudiar cómo funciona la refrigeración de un centro de datos o la red eléctrica y bombardea a las administraciones con solicitudes de acceso a información pública.
+
+Maxime Fournes, de PauseAI, lo explica así: la IA necesita una infraestructura física enorme, y eso le da al movimiento un "objeto de protesta muy físico y concreto". Y, a veces, un blanco.
+
+**Cuando la protesta cruza la línea**
+
+Aquí el artículo se pone serio. En el último año, grupos anarquistas o de extrema izquierda que protestan por la crisis climática y la IA han reivindicado ataques contra infraestructuras en Francia y Alemania. En agosto, Wynd Kaufmyn se convirtió en la primera activista antiIA que se sepa encarcelada por acción directa: bloqueó la entrada de la sede de OpenAI en San Francisco. En abril, otro manifestante lanzó un cóctel molotov contra la casa de Sam Altman, y ese mismo mes alguien disparó contra el domicilio de un político de Indianápolis en protesta por un proyecto de centro de datos. El mes pasado, en Montreal, rompieron ventanas y pintaron "burn the data centers" ("quemad los centros de datos") en el instituto de IA Mila y en una empresa de software cercana.
+
+Conviene no meter todo en el mismo saco: bloquear una puerta, lanzar un cóctel molotov o disparar contra una casa no son lo mismo, aunque el titular los junte bajo la misma etiqueta. Pero Mauro Lubrano, profesor de terrorismo y violencia política en la Universidad de Leiden, avisa: si las demandas de transparencia, rendición de cuentas y democracia en la gobernanza de la IA no se atienden, más gente podría acabar tentada por la violencia, y es "bastante probable" que la violencia antiIA gane peso como motor de violencia política.
+
 **La duda de fondo**
 
-No todo el mundo aplaude. Algunos críticos del propio sector antiIA temen que la acción directa provoque una "respuesta inmunitaria" de la sociedad y regale a los laboratorios la oportunidad de pintar a los activistas como delincuentes, y así girar a la opinión pública en su contra. Es la misma duda que acompañó al movimiento climático durante años: ¿sirve de algo ser molesto, o espanta justo a quien quieres convencer?
+Algunos activistas de Pull The Plug vienen de Just Stop Oil o Extinction Rebellion; uno de los miembros de la célula de Emma se pegaba con pegamento a las carreteras por el clima, una táctica que acabó alejando al público. Fournes, cuya organización rechaza la acción directa, la considera "extremadamente contraproducente": cree que provocará una "respuesta inmunitaria" de la sociedad y regalará a los laboratorios la oportunidad de decir "son delincuentes", con lo que será más fácil poner a la opinión pública en contra de todo el movimiento. Es la misma duda que acompañó al movimiento climático durante años: ¿sirve de algo ser molesto, o espanta justo a quien quieres convencer?
 
-Lo curioso es que hace 25 años [la propia industria ya conocía estos riesgos](/contraindicaciones/industria-ia-sabia-riesgos-hace-25-anos) y siguió adelante. Que ahora sea una camarera de 28 años con una pancarta quien intente frenarlo dice bastante de quién ha estado vigilando el reloj.
+Sea cual sea la táctica, algo se mueve. Y lo curioso es que hace 25 años [la propia industria ya conocía estos riesgos](/contraindicaciones/industria-ia-sabia-riesgos-hace-25-anos) y siguió adelante. Que ahora sea una camarera de 28 años con una pancarta quien intente frenarlo dice bastante de quién ha estado vigilando el reloj.
