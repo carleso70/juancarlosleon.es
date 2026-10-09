@@ -1,14 +1,14 @@
 ---
-title: 'Una IA puntúa cada llamada de los empleados de Co-op. Los clientes están de luto'
+title: 'El Gran Hermano ya tiene oficina: una IA vigila cada llamada de sus trabajadores'
 draft: true
-description: 'Co-op Legal Services graba y califica con IA cada conversación sobre herencias y testamentos. Un trabajador lo llama "distópico". La empresa dice que es "apoyo".'
+description: 'Una cooperativa británica con supermercados, funerarias y servicios jurídicos califica con IA cada llamada sobre herencias. Un trabajador lo llama "distópico".'
 pubDate: 2026-10-09
 fuente: The Guardian
 urlFuente: https://bdnews24.com/technology/mimfpbdq7v
 heroImage: ../../assets/og-co-op-vigilancia-ia.png
 ---
 
-Imagina que trabajas atendiendo llamadas de gente que acaba de perder a un familiar y necesita ayuda con el testamento. Y que, durante varias horas al día, un modelo de OpenAI escucha cada palabra, evalúa más de 50 aspectos de la conversación y le pasa a tu jefe un aprobado o un suspenso. Es lo que, según The Guardian, está ocurriendo en **Co-op Legal Services**, la división jurídica de la cooperativa británica.
+Imagina que trabajas atendiendo llamadas de gente que acaba de perder a un familiar y necesita ayuda con el testamento. Y que, durante varias horas al día, un modelo de OpenAI escucha cada palabra, evalúa más de 50 aspectos de la conversación y le pasa a tu jefe un aprobado o un suspenso. Es lo que, según The Guardian, está ocurriendo en **Co-op Legal Services**, la división jurídica de Co-op, una gran cooperativa británica que gestiona supermercados, funerarias, seguros y servicios legales.
 
 El sistema graba, analiza y asigna una puntuación porcentual a cada llamada. Se ha desplegado en los últimos meses entre decenas de empleados y se usa, en parte, para encontrar formas de mejorar el rendimiento en ventas. Un trabajador, bajo anonimato, lo resume sin florituras: "Te están monitorizando absolutamente cada palabra que dices [...] Es una sensación realmente distópica. Es el principio del fin".
 
