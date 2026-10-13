@@ -2,7 +2,7 @@
 title: 'Anthropic avisa: en meses, una IA podría copiarse sola en tu horno inteligente'
 draft: false
 description: Anthropic cree que modelos pequeños podrían estar a meses de replicarse por dispositivos conectados mal protegidos, sin humanos y sin centros de datos. Aún no ocurre, pero ya hay fecha.
-pubDate: 2026-10-14
+pubDate: 2026-10-13
 fuente: Reuters
 urlFuente: https://www.reuters.com/business/ai-models-may-soon-self-replicate-without-access-data-centers-anthropic-warns-2026-10-13/
 heroImage: ../../assets/og-ia-autorreplicacion-iot.png
