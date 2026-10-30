@@ -1,11 +1,11 @@
 ---
 title: 'DeepL: la IA que lleva años traduciendo sin que la llamemos IA'
-draft: true
-description: 'Traductor automático con redes neuronales, nacido en Colonia en 2017. Textos y documentos en decenas de idiomas, y un plan gratuito que da para mucho si sabes lo que no debes pegar.'
-pubDate: '2026-10-28'
-url: 'https://www.deepl.com'
+draft: false
+description: Traductor automático con redes neuronales, nacido en Colonia en 2017. Textos y documentos en decenas de idiomas, y un plan gratuito que da para mucho si sabes lo que no debes pegar.
+pubDate: 2026-10-30
+url: https://www.deepl.com
 gratis: true
-etiqueta: 'Traducción'
+etiqueta: Traducción
 ---
 
 Hay IA que la gente usa sin llamarla así, y DeepL es de las más veteranas. Nació en Colonia, dentro de Linguee, un diccionario en línea que había acumulado años de textos traducidos por humanos. Con esa montaña de ejemplos, su equipo entrenó redes neuronales y lanzó el traductor en agosto de 2017, con siete idiomas (entre ellos el español). Desde entonces ha crecido hasta valer unos 2.000 millones de dólares, según su última ronda de financiación, en 2024.
